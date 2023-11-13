@@ -5,6 +5,10 @@
   font-family: sans-serif;
 }
 
+.site-mobile-menu > ul > li .menu-toggle{
+  left: 0;
+  right: auto !important;
+}
 .slider_btn {
   display: inline-block;
 }
