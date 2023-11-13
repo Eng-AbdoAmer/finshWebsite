@@ -32142,6 +32142,7 @@ fieldset:disabled .btn {
 body,
 html {
   height: 100%;
+  overflow: visible;
 }
 body {
   font-family: Muli;
@@ -35673,9 +35674,9 @@ textarea:focus {
   overflow: hidden;
 }
 .mobile-menu-open #page {
-  -webkit-transform: translateX(-360px);
-  -ms-transform: translateX(-360px);
-  transform: translateX(-360px);
+  -webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  transform: translateX(0px);
 }
 .mobile-menu-open .site-main-mobile-menu {
   visibility: visible;
@@ -35702,8 +35703,11 @@ textarea:focus {
   padding: 0 15px 0 30px;
   background-color: #030f27;
 }
+.mobile-menu-logo{
+  width: 25%;
+}
 .mobile-menu-logo a {
-  width: 158px;
+  width: 100%;
 }
 .mobile-menu-close {
   padding: 0;

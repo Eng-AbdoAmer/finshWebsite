@@ -300,18 +300,14 @@ div.content-service {
   height: 100%;
 }
 div.content-personal {
-  margin-top: -11%;
-  margin-left: 21%;
-  margin-bottom: 8%;
   padding: 1px 16px;
   height: 100%;
+  float: left;
 }
 div.content-tip_details {
-  margin-top: -49%;
-  margin-left: -3%;
-  margin-bottom: 8%;
-  padding: 1px 16px;
-  height: 100%;
+  margin-left: -3% !important;
+  margin-top: 1% !important;
+  margin-bottom: 0 !important;
 }
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
@@ -346,8 +342,6 @@ div.content-tip_details {
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -678,13 +672,6 @@ p {
   line-height: 50px;
 }
 
-.tab {
-  margin-top: 3%;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
 /* Style the buttons that are used to open the tab content */
 .tab button {
   color: #000;
@@ -726,11 +713,11 @@ p {
 }
 /* Style the tab content */
 .tabcontent {
+  float: left !important;
   background-color: #eee;
+  width: 100% !important;
   display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
+  padding: 6px 0;
 }
 .visibility {
   display: block;

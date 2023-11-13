@@ -9,6 +9,14 @@
   left: 0;
   right: auto !important;
 }
+.intro-slider .home-slider-prev{
+  right: 3%;
+  left: auto !important;
+}
+.intro-slider .home-slider-next{
+  left: 3%;
+  right: auto !important;
+}
 .slider_btn {
   display: inline-block;
 }
@@ -73,13 +81,12 @@
   line-height: 50px;
 }
 
-.tab {
-  margin-top: 3%;
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.willwidth {
+  display: flex;
 }
-
+.designcolortab {
+  float: right !important;
+}
 /* Style the buttons that are used to open the tab content */
 .tab button {
   color: #000;
@@ -124,7 +131,6 @@
   background-color: #eee;
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 .visibility {
@@ -258,14 +264,9 @@ div.content-personal {
   height: 100%;
 }
 .sidebar {
-  height: 812px;
-  margin: 167px 50px;
-  padding: 0;
-  width: 17%;
-  background-color: #f1f1f1;
-  position: relative;
-  right: 211px;
-  overflow: auto;
+  float: right;
+  height: auto !important;
+  margin: 0 !important;
 }
 .tab-profile {
   width: 81%;
@@ -298,4 +299,8 @@ div.content-personal {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.image_content{
+  padding: 3% 0;
 }
