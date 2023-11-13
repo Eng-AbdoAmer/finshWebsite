@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "logo": "/images/brand/client-logo-01.png",
+        "alt": "brand logo"
+    },
+    {
+        "id": 2,
+        "logo": "/images/brand/client-logo-02.png",
+        "alt": "brand logo"
+    },
+    {
+        "id": 3,
+        "logo": "/images/brand/client-logo-03.png",
+        "alt": "brand logo"
+    },
+    {
+        "id": 4,
+        "logo": "/images/brand/client-logo-04.png",
+        "alt": "brand logo"
+    },
+    {
+        "id": 5,
+        "logo": "/images/brand/client-logo-05.png",
+        "alt": "brand logo"
+    },
+    {
+        "id": 6,
+        "logo": "/images/brand/client-logo-06.png",
+        "alt": "brand logo"
+    }
+]

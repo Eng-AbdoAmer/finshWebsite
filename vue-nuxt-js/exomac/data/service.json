@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Branding",
+        "text": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "iconSrc": "/images/svg/linea/linea-basic-target.svg"
+    },
+    {
+        "id": 2,
+        "title": "UX Design",
+        "text": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "iconSrc": "/images/svg/linea/linea-basic-picture-multiple.svg"
+    },
+    {
+        "id": 3,
+        "title": "Strategy",
+        "text": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "iconSrc": "/images/svg/linea/linea-basic-picture.svg"
+    },
+    {
+        "id": 4,
+        "title": "E-commerce",
+        "text": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "iconSrc": "/images/svg/linea/linea-ecommerce-cart-plus.svg"
+    },
+    {
+        "id": 5,
+        "title": "Marketing",
+        "text": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "iconSrc": "/images/svg/linea/linea-basic-display.svg"
+    },
+    {
+        "id": 6,
+        "title": "Development",
+        "text": "First impressions count! Make sure your brand works for you. We offer digital marketing.",
+        "iconSrc": "/images/svg/linea/linea-basic-gear.svg"
+    }
+]

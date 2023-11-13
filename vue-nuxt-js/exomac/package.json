@@ -1,0 +1,33 @@
+{
+    "name": "Exomac",
+    "version": "1.0.0",
+    "author": "uzzal",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate"
+    },
+    "dependencies": {
+        "@nuxtjs/style-resources": "^1.0.0",
+        "aos": "^2.3.4",
+        "bootstrap": "^4.5.2",
+        "bootstrap-vue": "^2.21.2",
+        "core-js": "^3.6.5",
+        "mixitup": "^3.3.1",
+        "nuxt": "^2.15.7",
+        "parallax-js": "^3.1.0",
+        "swiper": "^5.3.7",
+        "vue-awesome-swiper": "^4.1.0",
+        "vue-silentbox": "^2.2.0",
+        "vue-typer": "^1.2.0",
+        "vuejs-paginate": "^2.1.0"
+    },
+    "devDependencies": {
+        "node-sass": "^4.14.1",
+        "sass": "^1.26.11",
+        "sass-loader": "^10.0.2",
+        "webpack": "^4.44.2"
+    }
+}

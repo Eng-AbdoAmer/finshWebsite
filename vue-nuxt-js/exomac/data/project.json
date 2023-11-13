@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "/images/project/project-1.jpg",
+        "title": "HasThemes Development: An outstanding payment app",
+        "desc": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies."
+    },
+    {
+        "id": 2,
+        "imgSrc": "/images/project/project-2.jpg",
+        "title": "Dashboards UI Kit open-source set of ready-to-use templates",
+        "desc": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies."
+    },
+    {
+        "id": 3,
+        "imgSrc": "/images/project/project-3.jpg",
+        "title": "Project You X Ventures Studio. Toronto, Canada",
+        "desc": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies."
+    },
+    {
+        "id": 4,
+        "imgSrc": "/images/project/project-4.jpg",
+        "title": "Launching a new campaign this month, Nike by you",
+        "desc": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies."
+    },
+    {
+        "id": 5,
+        "imgSrc": "/images/project/project-5.jpg",
+        "title": "Branding and photography. Mother Nature: Summer",
+        "desc": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies."
+    },
+    {
+        "id": 6,
+        "imgSrc": "/images/project/project-6.jpg",
+        "title": "Modern and unique design for a furniture application",
+        "desc": "Quickly analyzing the digital business landscape, we create effective action plans and design optimal strategies."
+    }
+]

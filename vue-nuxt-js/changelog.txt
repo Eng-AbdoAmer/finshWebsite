@@ -1,0 +1,10 @@
+Version: 1.1.1
+Date:    07-07-2021 
+===========================
+1. Bootstrap-vue version update
+2. Nuxt version update
+3. Minor css issue fix
+
+
+
+

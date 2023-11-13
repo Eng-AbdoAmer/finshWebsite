@@ -1,0 +1,94 @@
+[
+    {
+        "imgSrc": "/images/team/team-1.jpg",
+        "name": "Merrie Lewis",
+        "position": "General Director",
+        "role": "admin",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "imgSrc": "/images/team/team-2.jpg",
+        "name": "Mariana Buenos",
+        "position": "CEO & Chief Manager",
+        "role": "admin",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "imgSrc": "/images/team/team-3.jpg",
+        "name": "Maya",
+        "position": "Project Manager",
+        "role": "admin",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    },
+    {
+        "imgSrc": "/images/team/team-4.jpg",
+        "name": "Parks Missie",
+        "position": "Marketing Manager",
+        "role": "employee",
+        "socialList": [
+            {
+                "name": "Facebook",
+                "iconName": "fab fa-facebook-f",
+                "url": "#"
+            },
+            {
+                "name": "Twitter",
+                "iconName": "fab fa-twitter",
+                "url": "#"
+            },
+            {
+                "name": "Instagram",
+                "iconName": "fab fa-instagram",
+                "url": "#"
+            }
+        ]
+    }
+]

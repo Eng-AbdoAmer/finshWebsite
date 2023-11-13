@@ -1,0 +1,59 @@
+#map {
+  height: 427px;
+  width: 475px;
+  position: relative;
+  top: 0%;
+  overflow: hidden;
+}
+.content-map {
+  position: relative;
+}
+/*============= caption_data style ================*/
+
+.content strong {
+  color: #030f27;
+}
+.content span {
+  color: #1292ee;
+}
+.content {
+  padding: 10px 25px;
+  position: relative;
+}
+.content::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  font-size: 1em;
+
+  position: absolute;
+  top: 44%;
+  left: 2%;
+  /* border: 11px solid #1292ee; */
+
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231292EE"><path d="M12 21c-.26 0-.51-.1-.71-.29a.996.996 0 0 1 0-1.41l7.29-7.29-7.29-7.29a.996.996 0 1 1 1.41-1.41l8 8c.39.39.39 1.02 0 1.41l-8 8c-.2.2-.45.29-.71.29ZM4 21c-.26 0-.51-.1-.71-.29a.996.996 0 0 1 0-1.41l7.29-7.29-7.29-7.3A.996.996 0 1 1 4.7 3.3l8 8c.39.39.39 1.02 0 1.41l-8 8c-.2.2-.45.29-.71.29Z"></path></svg>');
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.pageSpace {
+  margin: auto;
+  width: 1170px;
+  box-sizing: border-box;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pageMap {
+  width: 47%;
+  float: left;
+}
+.content-map {
+  float: right;
+}
+.pageContent {
+  margin-left: 3%;
+}

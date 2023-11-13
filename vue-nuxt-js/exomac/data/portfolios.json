@@ -1,0 +1,40 @@
+{
+    "portfolios": [
+        {
+            "id": 1,
+            "imgSrc": "/images/portfolio/portfolio-1.jpg",
+            "title": "Digital marketing",
+            "category": "development"
+        },
+        {
+            "id": 2,
+            "imgSrc": "/images/portfolio/portfolio-2.jpg",
+            "title": "App Development",
+            "category": "app design"
+        },
+        {
+            "id": 3,
+            "imgSrc": "/images/portfolio/portfolio-3.jpg",
+            "title": "Graphics Design",
+            "category": "marketing"
+        },
+        {
+            "id": 4,
+            "imgSrc": "/images/portfolio/portfolio-4.jpg",
+            "title": "Web Development",
+            "category": "software"
+        },
+        {
+            "id": 5,
+            "imgSrc": "/images/portfolio/portfolio-5.jpg",
+            "title": "Construction Project",
+            "category": "design"
+        },
+        {
+            "id": 6,
+            "imgSrc": "/images/portfolio/portfolio-6.jpg",
+            "title": "Illustration Design",
+            "category": "app"
+        }
+    ]
+}

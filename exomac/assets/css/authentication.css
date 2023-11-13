@@ -1,0 +1,174 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  font-family: "Lato", sans-serif, "Cairo";
+  font-size: 16px;
+  font-weight: 400;
+  color: #2c4a6b;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.main_text {
+  text-align: center;
+  color: #030f27;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.tab {
+  margin-top: 30%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: #eee;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button.active,
+.tab button:hover {
+  font-weight: bold;
+  color: #fff;
+  background-color: #030f27;
+}
+
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+.tabcontent {
+  background-color: #eee;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.visibility {
+  display: block;
+  visibility: visible;
+}
+.site-button {
+  margin-top: 15px;
+  background-color: #1292ee;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  line-height: 1.42857;
+}
+.btn {
+  width: 22%;
+  color: #000;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  line-height: 1.42857;
+}
+.login_area p {
+  color: #2c4a6b;
+  text-align: center;
+}
+.form-control {
+  margin: auto;
+  width: 40% !important;
+  background: #dde3ec;
+  height: 44px;
+  border: none;
+  border-color: #e1e6eb;
+  box-shadow: none;
+
+  font-size: 13px;
+  line-height: 20px;
+  padding: 9px 12px !important;
+}
+.color_reset {
+  color: #f00 !important;
+}
+.check_box_group .reset {
+  position: relative;
+  left: 13%;
+  top: 7px;
+}
+.check_box_group .check_area {
+  margin-top: 15px;
+  position: absolute;
+  left: 33%;
+}
+#Client .active {
+  visibility: visible;
+  opacity: 1;
+}
+.selected {
+  color: #f00;
+}
+.regisrt_area h2 {
+  cursor: pointer;
+}
+.regisrt_area .Caption {
+  display: none;
+}
+.marginB-20 {
+  margin-bottom: 20px;
+}
+
+.check_box_area input[name="forgetPassword"] {
+  color: #f00;
+  border: none;
+  margin-left: 244px;
+}
+.check_box_area input[type="checkbox"] {
+  margin: 0px 4px;
+  align-items: center;
+  text-align: center;
+  height: 20px;
+  width: 20px;
+}
+.check_area {
+  height: 40px;
+}
+#email-error,
+label.error,
+.error {
+  margin-bottom: 5px;
+  font-weight: 300;
+  display: block;
+  color: #f00;
+  font-size: 14px;
+} */

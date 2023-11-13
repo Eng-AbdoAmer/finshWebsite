@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2c4a6b;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+#bg {
+  background: #2c4a6b;
+  background-attachment: fixed;
+  background-size: cover;
+}
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+.divider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before,
+.divider::after {
+  flex: 1;
+  content: "";
+  padding: 1px;
+  background-color: black;
+  margin: 5px;
+}
+.page-wraper {
+  margin-top: 30%;
+}
+.login {
+  max-width: 400px;
+  margin: 0px auto;
+  background: #fff;
+}
+.text-center {
+  text-align: center;
+}

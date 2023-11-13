@@ -1,0 +1,86 @@
+{
+    "footerAboutWidget": {
+        "logoSrc": "/images/logo/footer-logo.png",
+        "telephone": "0123456789",
+        "email": "demo@example.com",
+        "fbUrl": "#",
+        "twitterUrl": "#",
+        "instagramUrl": "#"
+    },
+    "footerLinkTitleOne": "Services",
+    "navListOne": [
+        {
+            "navTitle": "Marketing",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "SEO/SEM",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Development",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "UX Design",
+            "navUrl": "/" 
+        }
+    ],
+    "footerLinkTitleTwo": "Products",
+    "navListTwo": [
+        {
+            "navTitle": "Elementor Guru",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "WooLentor Pro",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Plugins",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Page Builder",
+            "navUrl": "/" 
+        }
+    ],
+    "footerLinkTitleThree": "About",
+    "navListThree": [
+        {
+            "navTitle": "Features",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Our Partners",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Affiliate Program",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Pricing",
+            "navUrl": "/" 
+        }
+    ],
+    "footerLinkTitleFour": "Contact",
+    "navListFour": [
+        {
+            "navTitle": "Support Ticket",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Help Desk",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "Live Chat",
+            "navUrl": "/" 
+        },
+        {
+            "navTitle": "FAQs",
+            "navUrl": "/" 
+        }
+    ]
+}

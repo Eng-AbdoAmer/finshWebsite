@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "How your sales can work together in account-based marketing",
+        "date": "Apr 06, 2020",
+        "view": 70,
+        "imgSrc": "/images/blog/370/blog-1.jpg",
+        "bigImgSrc": "/images/blog/770/blog-1.jpg",
+        "desc": "We've always known the power of digital, and we've mastered the strategy, tactics, and technology to harness it. Now, other departments have had to embrace the digital transformation that businesses have been talking about for so long.",
+        "comment": "8"
+    },
+    {
+        "id": 2,
+        "title": "The six things marketers need to understand about DTC marketing",
+        "date": "Jun 26, 2020",
+        "view": 92,
+        "imgSrc": "/images/blog/370/blog-2.jpg",
+        "bigImgSrc": "/images/blog/770/blog-2.jpg",
+        "desc": "We've always known the power of digital, and we've mastered the strategy, tactics, and technology to harness it. Now, other departments have had to embrace the digital transformation that businesses have been talking about for so long.",
+        "comment": "9"
+    },
+    {
+        "id": 3,
+        "title": "Eleven top tips for developing agile marketing",
+        "date": "May 16, 2020",
+        "view": 55,
+        "imgSrc": "/images/blog/370/blog-3.jpg",
+        "bigImgSrc": "/images/blog/770/blog-3.jpg",
+        "desc": "We've always known the power of digital, and we've mastered the strategy, tactics, and technology to harness it. Now, other departments have had to embrace the digital transformation that businesses have been talking about for so long.",
+        "comment": "15"
+    },
+    {
+        "id": 4,
+        "title": "Eleven top tips for developing agile marketing",
+        "date": "Feb 14, 2020",
+        "view": 36,
+        "imgSrc": "/images/blog/370/blog-4.jpg",
+        "bigImgSrc": "/images/blog/770/blog-1.jpg",
+        "desc": "We've always known the power of digital, and we've mastered the strategy, tactics, and technology to harness it. Now, other departments have had to embrace the digital transformation that businesses have been talking about for so long.",
+        "comment": "40"
+    },
+    {
+        "id": 5,
+        "title": "How your sales can work together in account-based marketing",
+        "date": "Aug 26, 2020",
+        "view": 46,
+        "imgSrc": "/images/blog/370/blog-5.jpg",
+        "bigImgSrc": "/images/blog/770/blog-2.jpg",
+        "desc": "We've always known the power of digital, and we've mastered the strategy, tactics, and technology to harness it. Now, other departments have had to embrace the digital transformation that businesses have been talking about for so long.",
+        "comment": "32"
+    },
+    {
+        "id": 6,
+        "title": "The six things marketers need to understand about DTC marketing",
+        "date": "Jun 22, 2020",
+        "view": 34,
+        "imgSrc": "/images/blog/370/blog-6.jpg",
+        "bigImgSrc": "/images/blog/770/blog-3.jpg",
+        "desc": "We've always known the power of digital, and we've mastered the strategy, tactics, and technology to harness it. Now, other departments have had to embrace the digital transformation that businesses have been talking about for so long.",
+        "comment": "64"
+    }
+]

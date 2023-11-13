@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #030f27 !important;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2c4a6b;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.personal_info {
+  /* background-color: #030f27; */
+  padding: 50px 0;
+}
+.card_info {
+  background-color: #eee;
+  padding: 30px 0;
+  border-radius: 16px;
+}
+.personal_info .image img {
+  background-size: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.checked {
+  color: orange;
+}
+.information h2 {
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 600;
+  margin: 0;
+  color: #030f27;
+}
+.information h4 {
+  font-size: 18px;
+  line-height: 0px;
+  font-weight: 500;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #000;
+}
+.information h5 {
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 200;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #8c89a2;
+}
+p {
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.form-control {
+  display: block;
+  width: 60% !important;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/*================ Create a Custom Select Menu========================= */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  padding: 5px 5px;
+  color: #656464;
+  float: right;
+  width: 140px;
+  display: inline-flex;
+  position: relative;
+  right: 300px;
+  bottom: 18px;
+  border: 1px solid #ced4da;
+}
+.custom-select select:hover {
+  color: DodgerBlue;
+}
+.gender .custom-select option:hover {
+  color: #fff;
+  background-color: #030f27;
+}
+
+.select-selected {
+  background-color: #eee;
+}
+.gender {
+  margin-bottom: -10px;
+}
+.gender .custom-select {
+  position: relative;
+  left: 221px;
+  bottom: 18px;
+  border: 1px solid #ced4da;
+  border: none;
+  appearance: none;
+}
+.gender .custom-select option {
+  color: #000;
+  padding: 8px 16px;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  user-select: none;
+}
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.clear {
+  clear: both;
+}
+.site-button {
+  margin-top: 15px;
+  background-color: #1292ee;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  line-height: 1.42857;
+}
+.bt-50 {
+  margin-left: 25%;
+  width: 50%;
+}
+.w-200 option {
+  width: 200px !important;
+}
+/* =====================fullPageTape================ */
+.tablink {
+  border-radius: 16px;
+  margin-top: 20%;
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: #030f27;
+  display: none;
+  /* padding: 100px 0px; */
+  height: 100%;
+}
+
+#Home {
+  /* background-color: red; */
+}
+#News {
+  background-color: #eee;
+}
+#Contact {
+  background-color: #eee;
+}
+#About {
+  background-color: #eee;
+}

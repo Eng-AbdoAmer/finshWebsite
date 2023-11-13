@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+    <link rel="stylesheet" href="../exomac/assets/css/authentication.css" />
+    <link rel="stylesheet" href="../exomac/assets/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="../exomac/assets/css/bootstrap/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="taps mb-20">
+      <div class="container">
+        <div class="tab">
+          <button
+            class="tablinks visibility"
+            onclick="openCity(event, 'Login')"
+          >
+            Login
+          </button>
+          <button class="tablinks" onclick="openCity(event, 'Register')">
+            Register
+          </button>
+        </div>
+
+        <!-- =====================Login Area=============== -->
+        <div id="Login" class="tabcontent visibility text-center">
+          <div class="registerId regisrt_area">
+            <h2 class="main_text">
+              <span class="selected" data-class="Client">Client</span> |
+              <span data-class="Caption">Caption</span>
+            </h2>
+            <p>Chose Type Account First</p>
+            <form id="LoginClient" class="Client">
+              <input
+                placeholder="Enter user email Client"
+                required
+                class="form-control mb-20"
+                name="email"
+                autocomplete="off"
+                type="email"
+              />
+              <input
+                placeholder="Enter user password Client"
+                required
+                class="form-control mb-20"
+                name="password"
+                autocomplete="off"
+                type="password"
+              />
+              <div class="check_box_area">
+                <input type="checkbox" name="rememberMe" id="" />
+                <label for="">Remember Me</label>
+                <input
+                  class="mb-20"
+                  type="submit"
+                  name="forgetPassword"
+                  value="Forget Password"
+                />
+              </div>
+              <input
+                class="btn btn-primary btn-hover-primary mb-20"
+                name="register"
+                autocomplete="off"
+                type="submit"
+                value="Login"
+              />
+            </form>
+            <form id="LoginCaption" class="Caption">
+              <input
+                placeholder="Enter user email Client"
+                required
+                class="form-control mb-20"
+                name="email"
+                autocomplete="off"
+                type="email"
+              />
+              <input
+                placeholder="Enter user password Client"
+                required
+                class="form-control mb-20"
+                name="password"
+                autocomplete="off"
+                type="password"
+              />
+              <div class="check_box_area">
+                <input type="checkbox" name="rememberMe" id="" />
+                <label for="">Remember Me</label>
+                <input
+                  class="mb-20"
+                  type="submit"
+                  name="forgetPassword"
+                  value="Forget Password"
+                />
+              </div>
+              <input
+                class="btn btn-primary btn-hover-primary mb-20"
+                name="register"
+                autocomplete="off"
+                type="submit"
+                value="Login"
+              />
+            </form>
+          </div>
+        </div>
+        <!-- =====================RegisterArea=============== -->
+        <div id="Register" class="tabcontent text-center">
+          <div class="registerId regisrt_area">
+            <h2 class="main_text">
+              <span class="selected" data-class="Client">Client</span> |
+              <span data-class="Caption">Caption</span>
+            </h2>
+            <form id="RegisterClient" class="Client">
+              <input
+                placeholder="Enter user Name Client"
+                required
+                class="form-control mb-20"
+                name="name"
+                autocomplete="off"
+                type="text"
+              />
+              <input
+                placeholder="Enter user phone Client"
+                required
+                class="form-control mb-20"
+                name="phone"
+                autocomplete="off"
+                type="tel"
+              />
+              <input
+                placeholder="Enter user Country Client"
+                required
+                class="form-control mb-20"
+                name="country"
+                autocomplete="off"
+                type="text"
+              />
+              <input
+                placeholder="Enter user email Client"
+                required
+                class="form-control mb-20"
+                name="email"
+                autocomplete="off"
+                type="email"
+              />
+              <input
+                placeholder="Enter user password Client"
+                required
+                class="form-control mb-20"
+                name="password"
+                autocomplete="off"
+                type="password"
+              />
+              <div class="check_box_area mb-20">
+                <input type="checkbox" name="rememberMe" id="" />
+                <strong>
+                  <a>Terms of Service </a>
+                  &
+                  <a>Privacy Policy</a>
+                </strong>
+              </div>
+              <input
+                class="btn btn-primary btn-hover-primary mb-20"
+                name="register"
+                autocomplete="off"
+                type="submit"
+                value="Register"
+              />
+            </form>
+            <form id="RegisterCaption" class="Caption">
+              <input
+                placeholder="Enter user Name Caption"
+                required
+                class="form-control mb-20"
+                name="name"
+                autocomplete="off"
+                type="text"
+              />
+              <input
+                placeholder="Enter user phone Caption"
+                required
+                class="form-control mb-20"
+                name="phone"
+                autocomplete="off"
+                type="tel"
+              />
+              <input
+                placeholder="Enter user Country Caption"
+                required
+                class="form-control mb-20"
+                name="country"
+                autocomplete="off"
+                type="text"
+              />
+              <input
+                placeholder="Enter user email Caption"
+                required
+                class="form-control mb-20"
+                name="email"
+                autocomplete="off"
+                type="email"
+              />
+              <input
+                placeholder="Enter user password Caption"
+                required
+                class="form-control mb-20"
+                name="password"
+                autocomplete="off"
+                type="password"
+              />
+              <div class="check_box_area mb-20">
+                <input type="checkbox" name="rememberMe" id="" />
+                <strong>
+                  <a>Terms of Service </a>
+                  &
+                  <a>Privacy Policy</a>
+                </strong>
+              </div>
+              <input
+                class="btn btn-primary btn-hover-primary mb-20"
+                name="register"
+                autocomplete="off"
+                type="submit"
+                value="Register"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====================javaScript ================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../Documentation/assets/js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="../exomac/assets/js/all.min.js"></script>
+    <script src="../exomac/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../exomac/assets/js/authentication.js"></script>
+  </body>
+</html>

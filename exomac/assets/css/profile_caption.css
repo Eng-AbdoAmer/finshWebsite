@@ -1,0 +1,420 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #eee !important;
+  font-family: "Lato", sans-serif, "Cairo";
+  font-size: 16px;
+  font-weight: 400;
+  color: #2c4a6b;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+} */
+/* The side navigation menu */
+/* .sidebar {
+  margin: 167px 7px;
+  padding: 0;
+  width: 20%;
+  background-color: #f1f1f1;
+  position: relative;
+  height: 370px;
+  overflow: auto;
+} */
+
+/* Sidebar links */
+/* .sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.sidebar .image_content img {
+  margin: 0% 25%;
+  background-size: cover;
+  border-radius: 50%;
+  max-width: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+} */
+/* Active/current link */
+/* .sidebar a.active {
+  background-color: #030f27;
+  color: white;
+} */
+
+/* Links on mouse-over */
+/* .sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+} */
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+/* div.content {
+  margin-top: -27%;
+  margin-left: 30%;
+  margin-bottom: 12%;
+  padding: 1px 16px;
+  height: 100%;
+} */
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+/* @media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+} */
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+/* @media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.visibility {
+  display: block;
+  visibility: visible;
+}
+.visibilityBlock {
+  display: block;
+} */
+/*=============== tapsStyle============== */
+/* Style the tab */
+/* .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+ */
+/* Style the buttons that are used to open the tab content */
+/* .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+} */
+
+/* Change background color of buttons on hover */
+/* .tab button:hover {
+  background-color: #ddd;
+}
+ */
+/* Create an active/current tablink class */
+/* .tab button.active {
+  background-color: #ccc;
+} */
+
+/* Style the tab content */
+/* .tabcontent {
+  margin-top: -80px;
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+} */
+/*caption Details*/
+/* .personal_info {
+ 
+  padding: 50px 0;
+}
+.card_info {
+  background-color: #eee;
+  padding: 30px 0;
+  border-radius: 16px;
+}
+.checked {
+  color: orange;
+}
+.information h2 {
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 600;
+  margin: 0;
+  color: #030f27;
+}
+.information h4 {
+  font-size: 18px;
+  line-height: 0px;
+  font-weight: 500;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #000;
+}
+.information h5 {
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 200;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #8c89a2;
+}
+p {
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.information h2 {
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 600;
+  margin: 0;
+  color: #030f27;
+}
+.information h4 {
+  font-size: 18px;
+  line-height: 0px;
+  font-weight: 500;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #000;
+}
+.information h5 {
+  font-size: 18px;
+  line-height: 15px;
+  font-weight: 200;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  color: #8c89a2;
+}
+p {
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.form-control {
+  display: block;
+  width: 60% !important;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.site-button {
+  margin-top: 15px;
+  background-color: #1292ee !important;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  line-height: 1.42857;
+} */
+/* required_documents */
+/* .required_documents .main_text {
+  text-align: center;
+  color: #030f27;
+  font-weight: bold;
+  line-height: 50px;
+  cursor: pointer;
+}
+.selected {
+  color: #f00;
+}
+.person-documents {
+  margin: 10px;
+  padding: 50px 0;
+}
+.content-car-info {
+  margin: 10px;
+  padding: 50px 0;
+}
+.person-documents .id-card {
+  background-color: #eee;
+}
+.CaptionLicence-documents input[type="file"],
+.carLicence-documents input[type="file"],
+.caption-data input[type="file"],
+.car-images input[type="file"],
+.person-documents input[type="file"] {
+  display: none;
+}
+.CaptionLicence-documents label,
+.carLicence-documents label,
+.caption-data label,
+.car-images label,
+.person-documents label {
+  display: flex;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: #1292ee;
+  text-align: center;
+  padding: 10px 35px;
+  font-size: 16px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.CaptionLicence-documents img,
+.carLicence-documents img,
+.caption-data img,
+.person-documents img {
+  max-width: 50%;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+
+.car-images p,
+.car-information p {
+  line-height: revert;
+  background-color: #030f27;
+  letter-spacing: 14px;
+  word-spacing: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.select-style {
+  display: block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  height: 40px;
+  width: 60%;
+}
+.car-images {
+  margin: 5% 0;
+}
+
+.car-images img {
+  max-width: 100%;
+  height: 140px;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+.car-images h2 {
+  font-size: 19px;
+  font-weight: 600;
+}
+.car-images label {
+  padding: 11px;
+  margin: auto;
+}
+.car-images svg {
+  margin: auto;
+}
+
+.save {
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+.moreDetails:hover,
+.save:hover {
+  color: #fff;
+  background-color: #030f27 !important;
+} */
+/* =============Trip Details style============== */
+/* .trip-table-details .table thead {
+  background-color: #030f27;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: bold;
+}
+.trip-table-details .table tr:hover td {
+  cursor: pointer;
+}
+.moreDetails {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 3px 10px;
+  width: 77%;
+  text-decoration: none;
+} */
+/* mapStyle */
+/* #map {
+  height: 270px;
+  width: 370px;
+  position: relative;
+  top: 0%;
+  overflow: hidden;
+}
+.content-map {
+  position: relative;
+}
+.data strong {
+  color: #030f27;
+}
+.data span {
+  color: #1292ee;
+}
+.data {
+  padding: 10px 25px;
+  position: relative;
+}
+.data::before {
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  font-size: 1em;
+  position: absolute;
+  top: 44%;
+  left: 2%;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231292EE"><path d="M12 21c-.26 0-.51-.1-.71-.29a.996.996 0 0 1 0-1.41l7.29-7.29-7.29-7.29a.996.996 0 1 1 1.41-1.41l8 8c.39.39.39 1.02 0 1.41l-8 8c-.2.2-.45.29-.71.29ZM4 21c-.26 0-.51-.1-.71-.29a.996.996 0 0 1 0-1.41l7.29-7.29-7.29-7.3A.996.996 0 1 1 4.7 3.3l8 8c.39.39.39 1.02 0 1.41l-8 8c-.2.2-.45.29-.71.29Z"></path></svg>');
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.dont_show {
+  display: none;
+} */

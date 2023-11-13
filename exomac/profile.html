@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>profile</title>
+    <link rel="stylesheet" href="../exomac/assets/css/profile_style.css" />
+    <link rel="stylesheet" href="../exomac/assets/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="../exomac/assets/css/bootstrap/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="full_page_tap">
+      <div class="container">
+        <div class="personal_info">
+          <div class="container">
+            <div class="row align-items-center card_info">
+              <div class="col-lg-5">
+                <div class="image align-items-center">
+                  <img
+                    src="https://img.freepik.com/premium-photo/smiling-asian-girl-doing-homework-studying-online-laptop-from-home-young-woman-working-compute_1258-84154.jpg?w=996"
+                    alt=""
+                  />
+                  <button
+                    type="submit"
+                    class="site-button bt-50"
+                    name="EditProfileImage"
+                  >
+                    Edit Profile Image
+                  </button>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="information">
+                  <h2>Ahmed Adel morsy</h2>
+                  <h4>New york</h4>
+                  <h5>Rating</h5>
+                  <div class="rating">
+                    8.5
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </div>
+                  <p>Account Details</p>
+                  <form></form>
+                  <div class="input_box">
+                    <label for="">Name</label>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="input_box">
+                    <label for="">Email</label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="input_box">
+                    <label for="">phone</label>
+                    <input
+                      type="tel"
+                      placeholder="Enter your phone"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="input_box">
+                    <label for="">country</label>
+                    <input
+                      type="text"
+                      placeholder="Egypt"
+                      readonly
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="gender">
+                    <span>Select gander</span>
+                    <div class="custom-select w-200">
+                      <select
+                        class="js-example-responsive"
+                        style="width: 30%"
+                        id="gender"
+                        name="state"
+                      >
+                        <option value="" disabled selected>
+                          -- Chooses --
+                        </option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="input_box">
+                    <label for="">password</label>
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      required
+                      class="form-control"
+                    />
+                  </div>
+                  <button type="submit" class="site-button" name="next">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="personal_info">
+      <div class="container">
+        <div class="row align-items-center card_info">
+          <div class="col-lg-5">
+            <div class="image align-items-center">
+              <img
+                src="https://img.freepik.com/premium-photo/smiling-asian-girl-doing-homework-studying-online-laptop-from-home-young-woman-working-compute_1258-84154.jpg?w=996"
+                alt=""
+              />
+              <button
+                type="submit"
+                class="site-button bt-50"
+                name="EditProfileImage"
+              >
+                Edit Profile Image
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="information">
+              <h2>Ahmed Adel morsy</h2>
+              <h4>New york</h4>
+              <h5>Rating</h5>
+              <div class="rating">
+                8.5
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+              <p>Account Details</p>
+              <form></form>
+              <div class="input_box">
+                <label for="">Name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  required
+                  class="form-control"
+                />
+              </div>
+              <div class="input_box">
+                <label for="">Email</label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  required
+                  class="form-control"
+                />
+              </div>
+              <div class="input_box">
+                <label for="">phone</label>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone"
+                  required
+                  class="form-control"
+                />
+              </div>
+              <div class="input_box">
+                <label for="">country</label>
+                <input
+                  type="text"
+                  placeholder="Egypt"
+                  readonly
+                  class="form-control"
+                />
+              </div>
+              <div class="gender">
+                <span>Select gander</span>
+                <div class="custom-select w-200">
+                  <select
+                    class="js-example-responsive"
+                    style="width: 30%"
+                    id="gender"
+                    name="state"
+                  >
+                    <option value="" disabled selected>-- Chooses --</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input_box">
+                <label for="">password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                  class="form-control"
+                />
+              </div>
+              <button type="submit" class="site-button" name="next">
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- ===javaScript=== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="../exomac/assets/js/all.min.js"></script>
+    <script src="../exomac/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../exomac/assets/js/prfile.js"></script>
+  </body>
+</html>
