@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/home_style_ar.css" />
 </head>
 
-<body>
+<body onload="initializeMap()">
   <div id="page" class="section">
     <!-- Header Section Start -->
     <div class="header-section header-transparent sticky-header section">
@@ -335,11 +335,11 @@
           <!-- Tab links -->
           <div class="tab willwidth">
             <button class="tablink designcolortab visibilityBlock" onclick="openTaps(event, 'London')">
-              تفاصيل
+              التفاصيل
             </button>
-            <button class="tablink designcolortab" onclick="openTaps(event, 'Paris')">
+            <!-- <button class="tablink designcolortab" onclick="openTaps(event, 'Paris')">
               المستندات المطلوبة
-            </button>
+            </button> -->
             <!-- <button class="tablink designcolortab" onclick="openTaps(event, 'Tokyo')">
               Tokyo
             </button> -->
@@ -354,7 +354,7 @@
                     <div class="information">
                       <h2> أحمد عادل مرسي </h2>
                       <h4> نيويورك </h4>
-                      <h5> تقييم </h5>
+                      <h5> التقيم </h5>
                       <div class="rating">
                         8.5
                         <span class="fa fa-star checked"></span>
@@ -367,23 +367,23 @@
                       <form></form>
                       <div class="input_box">
                         <label for=""> الإسم </label>
-                        <input type="text" placeholder="Enter your name" required class="form-control-caption" />
+                        <input type="text" placeholder="أكتب الإسم" required class="form-control-caption" />
                       </div>
                       <div class="input_box">
                         <label for=""> البريد الإلكتروني </label>
-                        <input type="email" placeholder="Enter your email" required class="form-control-caption" />
+                        <input type="email" placeholder="أكتب الإميل" required class="form-control-caption" />
                       </div>
                       <div class="input_box">
                         <label for=""> رقم الهاتف </label>
-                        <input type="tel" placeholder="Enter your phone" required
+                        <input type="text" placeholder="أكتب رقم الهاتف" required
                           class="form-control-caption Accounttel" />
                       </div>
                       <div class="input_box">
                         <label for=""> البلد </label>
-                        <input type="text" placeholder="Egypt" readonly class="form-control-caption" />
+                        <input type="text" placeholder="مصر" readonly class="form-control-caption" />
                       </div>
                       <div class="gender">
-                        <span>Select gander</span>
+                        <span>إختارالجنس</span>
                         <div class="custom-select w-200">
                           <select class="js-example-responsive" style="   
                            border-radius: 5px;
@@ -401,7 +401,7 @@
                       </div>
                       <div class="input_box">
                         <label for=""> كلمة المرور </label>
-                        <input type="password" placeholder="Enter your password" required
+                        <input type="password" placeholder="أكتب الباسورد" required
                           class="form-control-caption" />
                       </div>
                       <button type="submit" class="site-button" name="next">
@@ -416,15 +416,15 @@
           <!-- Tab content -->
           <div id="Paris" class="tabBody" style="display: none">
             <div class="tab">
-              <button class="press designcolortab " onclick="openTapsDocument(event, 'documents')">
+              <!-- <button class="press designcolortab " onclick="openTapsDocument(event, 'documents')">
                 شخصي
               </button>
               <button class="press designcolortab " onclick="openTapsDocument(event, 'car-info')">
                 سيارة
-              </button>
+              </button> -->
 
               <!-- All documents content -->
-              <div id="documents" class="tabDoc">
+              <!-- <div id="documents" class="tabDoc">
                 <div class="container">
                   <div class="person-documents">
                     <div class="row widthRow">
@@ -545,7 +545,7 @@
 
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- content car information -->
               <div id="car-info" class="tabDoc" style="display: none">
                 <div class="container">
@@ -715,7 +715,7 @@
 
                       </div>
                       <button type="submit" class="site-button save" name="save">
-                        Save
+                        حفظ
                       </button>
                     </div>
 
@@ -734,45 +734,45 @@
         <div id="news" class="news_content tabcontent content-tip_details" style="border: none;
       background-color: #fff;">
           <div class="container">
-            <h2>Trip Details</h2>
+            <h2>تفاصيل الرحلة</h2>
             <div class="trip-table-details">
               <div class="table-responsive">
                 <table class="table">
                   <thead>
                     <tr>
-                      <th>Id</th>
-                      <th>Source Location</th>
-                      <th>Destination Location</th>
-                      <th>Price</th>
-                      <th>All Details</th>
+                      <th>رقم</th>
+                      <th>بداية الرحلة</th>
+                      <th>نهاية الرحلة</th>
+                      <th>السعر</th>
+                      <th>كل التفاصيل</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>Cairo</td>
-                      <td>Alexandria</td>
+                      <td>القاهرة</td>
+                      <td>الإسكندرية</td>
                       <td>120</td>
                       <td>
-                        <a class="site-button  moreDetails" onclick="hideShow()">more details</a>
+                        <a class="site-button  moreDetails" onclick="hideShow()">كل التفاصيل</a>
                       </td>
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td>Giza</td>
-                      <td>Mit Ghamr</td>
+                      <td>الجيزة</td>
+                      <td>ميت غمر</td>
                       <td>130</td>
                       <td>
-                        <a class="site-button moreDetails" onclick="hideShow()">more details</a>
+                        <a class="site-button moreDetails" onclick="hideShow()">كل التفاصيل</a>
                       </td>
                     </tr>
                     <tr>
                       <td>3</td>
-                      <td>Tanta</td>
-                      <td>Damietta</td>
+                      <td>طنطا</td>
+                      <td>دمياط</td>
                       <td>140</td>
                       <td>
-                        <a class=" site-button moreDetails" onclick="hideShow()">more details</a>
+                        <a class=" site-button moreDetails" onclick="hideShow()">كل التفاصيل</a>
                       </td>
                     </tr>
 
@@ -791,38 +791,38 @@
               <div class="col-lg-6">
                 <div class="caption_data">
                   <div class="data">
-                    <span><strong>Trip evaluation :</strong></span>
-                    <span>10%</span>
+                    <span><strong>تقييم الرحلة :</strong></span>
+                    <span>80%</span>
                   </div>
                 </div>
                 <div class="caption_data">
                   <div class="data">
-                    <span><strong>Customer name :</strong></span>
+                    <span><strong>اسم الكابتن :</strong></span>
                     <span>Ahmed Amer</span>
                   </div>
                 </div>
                 <div class="caption_data">
                   <div class="data">
-                    <span><strong>Comment on the trip :</strong></span>
-                    <span>"very good trip"</span>
+                    <span><strong>التعليق على الرحلة :</strong></span>
+                    <span>"جيد جداً"</span>
                   </div>
                 </div>
                 <div class="caption_data">
                   <div class="data">
-                    <span><strong>Trip type :</strong></span>
-                    <span>Rent by hour</span>
+                    <span><strong>نوع الرحلة :</strong></span>
+                    <span>الإيجار بالساعة</span>
                   </div>
                 </div>
                 <div class="caption_data">
                   <div class="data">
-                    <span><strong>Trip Status :</strong></span>
-                    <span>Done</span>
+                    <span><strong>حلة الرحلة :</strong></span>
+                    <span>رحلة ناجحة</span>
                   </div>
                 </div>
                 <div class="caption_data">
                   <div class="data">
-                    <span><strong>Time taken :</strong></span>
-                    <span>1h</span>
+                    <span><strong>الوقت المستغرق :</strong></span>
+                    <span>1ساعة</span>
                   </div>
                 </div>
               </div>
