@@ -436,3 +436,5 @@ function menuToggleNotification() {
   const toggleMenu = document.querySelector(".notification-box");
   toggleMenu.classList.toggle("active");
 }
+var d = new Date();
+page.currentYear = d.getFullYear();

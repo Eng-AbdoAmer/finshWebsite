@@ -35703,7 +35703,7 @@ textarea:focus {
   padding: 0 15px 0 30px;
   background-color: #030f27;
 }
-.mobile-menu-logo{
+.mobile-menu-logo {
   width: 25%;
 }
 .mobile-menu-logo a {
@@ -38010,6 +38010,10 @@ textarea:focus {
   margin-bottom: 17px;
 }
 .footer-widget-content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
   font-size: 18px;
   font-weight: 500;
   color: #748494;

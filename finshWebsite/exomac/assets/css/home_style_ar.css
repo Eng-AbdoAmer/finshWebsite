@@ -5,15 +5,15 @@
   font-family: sans-serif;
 }
 
-.site-mobile-menu > ul > li .menu-toggle{
+.site-mobile-menu > ul > li .menu-toggle {
   left: 0;
   right: auto !important;
 }
-.intro-slider .home-slider-prev{
+.intro-slider .home-slider-prev {
   right: 3%;
   left: auto !important;
 }
-.intro-slider .home-slider-next{
+.intro-slider .home-slider-next {
   left: 3%;
   right: auto !important;
 }
@@ -68,7 +68,7 @@
   max-width: 30% !important;
 }
 .footer-logo img {
-  margin: 0 166px;
+  margin: 10px 0px;
   width: 100px;
   height: 100px;
   padding: 0px 4px;
@@ -301,6 +301,6 @@ div.content-personal {
   -o-border-radius: 50%;
 }
 
-.image_content{
+.image_content {
   padding: 3% 0;
 }
