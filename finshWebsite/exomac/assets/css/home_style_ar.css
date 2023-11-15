@@ -363,3 +363,28 @@ div.content-personal {
     right: 405px;
   }
 }
+.notification-box {
+  left: 35px;
+  right: auto;
+}
+.notification-text:not(:last-child) {
+  margin-right: 15px;
+}
+.btn_notification {
+  padding: 14px;
+  color: #000;
+  display: inline-block;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  outline: none;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  line-height: 1.42857;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}

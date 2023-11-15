@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/my_style.css" />
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <!-- CSS============================================ -->
   <!-- Use the minified version files listed below for better performance and remove the files listed above -->
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/vendor/vendor.min.css" />
@@ -122,43 +126,49 @@
                 <!-- Header Login End -->
               </div>
               <!-- Header Search End -->
-              <!-- <div
-                  class="bell-notificatin"
-                  current-count="8"
-                  onclick="menuToggleNotification()"
-                >
-                  <i class="fa-solid fa-bell"></i>
-                </div> -->
-              <!-- <div class="notification-box" id="notification-box">
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-1.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Ahmed Adel</h4>
-                    <p>how can I help you</p>
-                  </div>
+              <div
+              class="bell-notificatin"
+              current-count="8"
+              onclick="showHide()"
+            >
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="notification-box animate__animated animate__flipInX" style="display: none;">
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-1.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Ahmed Adel</h4>
+                  <p>how can I help you</p>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-2.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Kmale Ali</h4>
-                    <p>how much this trip</p>
-                  </div>
+              </div>
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-2.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Kmale Ali</h4>
+                  <p>how much this trip</p>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-3.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Ahmed Amer</h4>
-                    <p>sorry! it's very expensive trip</p>
-                  </div>
+              </div>
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-3.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Ahmed Amer</h4>
+                  <p>sorry! it's very expensive trip</p>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-4.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Omer basem</h4>
-                    <p>I am waiting you sir</p>
-                  </div>
+              </div>
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-4.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Omer basem</h4>
+                  <p>I am waiting you sir</p>
                 </div>
-              </div> -->
+              </div>
+              <div class="notification-item">
+                <div class="notification-text flexcenter">
+                  <a href="usedApp_en.html" class="btn btn-primary btn-hover-secondary">View All</a>
+                  <!-- <a class="" href="#">View All</a> -->
+                </div>
+              </div>
+            </div>
               <!-- Header Mobile Menu Toggle Start -->
               <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
                 <button class="toggle">

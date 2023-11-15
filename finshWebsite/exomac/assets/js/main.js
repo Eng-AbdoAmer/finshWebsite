@@ -433,8 +433,18 @@ function menuToggle() {
   toggleMenu.classList.toggle("active");
 }
 function menuToggleNotification() {
-  const toggleMenu = document.querySelector(".notification-box");
-  toggleMenu.classList.toggle("active");
+  const toggleNotification = document.querySelector(".notification-box");
+  toggleNotification.classList.toggle("active");
 }
+
+//////
 var d = new Date();
 page.currentYear = d.getFullYear();
+
+function showHide() {
+  const toggleNotification = document.querySelector(".notification-box");
+  if (toggleNotification.style.display == "none") { 
+  toggleNotification.style.display = "block";
+}
+else toggleNotification.style.display = "none";
+}
