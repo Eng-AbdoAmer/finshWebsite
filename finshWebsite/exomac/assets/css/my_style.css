@@ -181,7 +181,7 @@
   position: absolute;
   border-radius: 15px;
   top: 100%;
-  left: 87%;
+  right: 38%;
   width: 250px !important;
   background-color: #fff;
   -webkit-border-radius: 15px;
@@ -1033,7 +1033,7 @@ label.error,
 .right-container .number {
   left: -20px;
 }
-.timeline::after {
+.timeline::before {
   content: "";
   position: absolute;
   width: 6px;
@@ -1042,10 +1042,11 @@ label.error,
   top: 0;
   left: 50%;
   margin-left: -3px;
-  z-index: 1;
+  z-index: 0;
   animation: moveline 6s linear forwards;
   -webkit-animation: moveline 6s linear forwards;
 }
+
 @keyframes moveline {
   0% {
     height: 0;
@@ -1081,7 +1082,7 @@ label.error,
   .timeline {
     margin: 50px auto;
   }
-  .timeline::after {
+  .timeline::before {
     left: 31px;
   }
   .stepperData {

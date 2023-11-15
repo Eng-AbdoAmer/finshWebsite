@@ -315,7 +315,7 @@ div.content-personal {
   right: 94%;
 } */
 .left-container .number {
-  right: 535px;
+  right: 92%;
 }
 .rightArrow {
   height: 0;
@@ -352,10 +352,10 @@ div.content-personal {
   .right-container {
     right: 0%;
   }
-  .left-container .number,
+  /* .left-container .number,
   .right-container .number {
     right: 460px;
-  }
+  } */
   .leftArrow,
   .rightArrow {
     border-right: 15px solid #fff;
