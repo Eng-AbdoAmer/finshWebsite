@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/home_style_ar.css" />
 </head>
 
-<body>
+<body onload="initializeMap()">
   <div id="page" class="section">
     <!-- Header Section Start -->
     <div class="header-section header-transparent sticky-header section">
@@ -1042,12 +1042,15 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   <script src="finshWebsite/Documentation/assets/js/all.min.js"></script>
   <script src="finshWebsite/exomac/assets/js/all.min.js"></script>
-  <!-- Main Activation JS -->
-  <script src="finshWebsite/exomac/assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+  <script src="finshWebsite/exomac/assets/js/all.min.js"></script>
+  <script src="finshWebsite/exomac/assets/js/bootstrap.bundle.min.js"></script>
   <script src="finshWebsite/exomac/assets/js/profile_caption.js"></script>
-  <script type="text/javascript"
-    src="https://maps.google.com/maps/api/js?key=AIzaSyCSGP2IG1S0M2-Nt9Pr_yDQmrjjysoH4Ek&callback=initializeMap"></script>
-  <!-- Modify-->
+  <script
+  type="text/javascript"
+  src="https://maps.google.com/maps/api/js?key=AIzaSyCSGP2IG1S0M2-Nt9Pr_yDQmrjjysoH4Ek&callback=initializeMap"
+>
+</script>
   <script>
     function initializeMap() {
       const locations = [
