@@ -16,6 +16,10 @@
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/my_style.css" />
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/all.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <!-- CSS============================================ -->
   <!-- Use the minified version files listed below for better performance and remove the files listed above -->
   <link rel="stylesheet" href="finshWebsite/exomac/assets/css/vendor/vendor.min.css" />
@@ -122,43 +126,49 @@
                 <!-- Header Login End -->
               </div>
               <!-- Header Search End -->
-              <!-- <div
-                  class="bell-notificatin"
-                  current-count="8"
-                  onclick="menuToggleNotification()"
-                >
-                  <i class="fa-solid fa-bell"></i>
-                </div> -->
-              <!-- <div class="notification-box" id="notification-box">
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-1.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Ahmed Adel</h4>
-                    <p>how can I help you</p>
-                  </div>
+              <div
+              class="bell-notificatin"
+              current-count="8"
+              onclick="showHide()"
+            >
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="notification-box animate__animated animate__flipInX" style="display: none;">
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-1.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Ahmed Adel</h4>
+                  <p>how can I help you</p>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-2.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Kmale Ali</h4>
-                    <p>how much this trip</p>
-                  </div>
+              </div>
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-2.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Kmale Ali</h4>
+                  <p>how much this trip</p>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-3.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Ahmed Amer</h4>
-                    <p>sorry! it's very expensive trip</p>
-                  </div>
+              </div>
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-3.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Ahmed Amer</h4>
+                  <p>sorry! it's very expensive trip</p>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-4.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Omer basem</h4>
-                    <p>I am waiting you sir</p>
-                  </div>
+              </div>
+              <div class="notification-item">
+                <img src="finshWebsite/exomac/assets/images/team/team-4.jpg" alt="" />
+                <div class="notification-text">
+                  <h4>Omer basem</h4>
+                  <p>I am waiting you sir</p>
                 </div>
-              </div> -->
+              </div>
+              <div class="notification-item">
+                <div class="notification-text flexcenter">
+                  <a href="usedApp_en.html" class="btn btn-primary btn-hover-secondary">View All</a>
+                  <!-- <a class="" href="#">View All</a> -->
+                </div>
+              </div>
+            </div>
               <!-- Header Mobile Menu Toggle Start -->
               <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
                 <button class="toggle">
@@ -315,7 +325,18 @@
     </div>
     <!-- Slider/Intro Section End -->
 
-    <!-- Service Section Start -->
+      <!-- Service Section Start -->
+      <div
+        id="services"
+        class="section section-padding-t90-b100"
+        data-bg-color="#f8faff"
+      >
+        <div class="container">
+          <!-- Section Title Start -->
+          <div class="section-title text-center mb-12" data-aos="fade-up">
+            <h2 class="title">All Services we will provide you</h2>
+            <!-- <p class="sub-title">
+     Service Section Start -->
     <div id="services" class="section section-padding-t110-b120" data-bg-color="#f8faff">
       <div class="container">
         <!-- Section Title Start -->
@@ -390,6 +411,22 @@
           <!-- Icon Box End -->
         </div>
       </div>
+      <!-- Service Section End -->
+      <!-- Earn money Start -->
+      <div class="section section-padding-t90" data-bg-color="#f8faff">
+        <div class="container">
+          <h2>Earn money with TripU</h2>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
+              <div class="imgBox">
+                <img src="finshWebsite/images/cars/driver/driver1.jpg" alt="" />
+                <div class="description">
+                  <h4>Drive with TripU</h4>
+                  <p>
+                    Make the most of your time on the road on the platform with
+                    the largest network of active riders.
+                  </p>
+                </div>
     </div>
     <!-- Service Section End -->
     <!-- Earn money Start -->
@@ -433,6 +470,29 @@
           </div>
         </div>
       </div>
+      <!-- Earn money End -->
+      <!-- businesses Start -->
+      <div class="section section-padding-t90" data-bg-color="#f8faff">
+        <div class="container">
+          <h2>Helping businesses move ahead</h2>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
+              <div class="imgBox">
+                <img
+                  style="height: 412px"
+                  src="finshWebsite/exomac/assets/images/project/ride-hailing.jpg"
+                  alt=""
+                />
+                <div class="description">
+                  <h4>TripU for Business</h4>
+                  <p>
+                    Whether it’s employee travel or customer rides, TripU for
+                    Business gives you an easy way to manage your ground
+                    transportation needs. Built for work, it offers a clear view
+                    into employee trip activity with automated billing,
+                    expensing, and reporting.
+                  </p>
+                </div>
     </div>
     <!-- Earn money End -->
     <!-- businesses Start -->
@@ -478,6 +538,29 @@
           </div>
         </div>
       </div>
+      <!-- businesses End -->
+      <!-- businesses Start -->
+      <div
+        class="section section-padding-t90 section-padding-bottom"
+        data-bg-color="#f8faff"
+      >
+        <div class="container">
+          <h2>Building safer journeys for everyone</h2>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
+              <div class="imgBox">
+                <img
+                  src="finshWebsite/exomac/assets/images/project/driver-female-client.jpg"
+                  alt=""
+                />
+                <div class="description">
+                  <h4>Driver safety</h4>
+                  <p>
+                    Count on 24/7 support to help with any questions or safety
+                    concerns. Share your trip with loved ones. Our focus is on
+                    your safety, so you can go where the opportunity is.
+                  </p>
+                </div>
     </div>
     <!-- businesses End -->
     <!-- businesses Start -->

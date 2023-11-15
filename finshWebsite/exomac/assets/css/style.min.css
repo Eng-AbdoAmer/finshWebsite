@@ -32757,11 +32757,20 @@ svg:not(:root) {
   padding-top: 90px;
   padding-bottom: 100px;
 }
+.section-padding-t55-b100 {
+  padding-top: 55px;
+  padding-bottom: 100px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-padding-t90-b100 {
     padding-top: 75px;
     padding-bottom: 80px;
   }
+  .section-padding-t55-b100 {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
 }
 @media only screen and (max-width: 767px) {
   .section-padding-t90-b100 {
@@ -32775,6 +32784,9 @@ svg:not(:root) {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-padding-t90 {
     padding-top: 70px;
+  }
+  .section-padding-t55-b100 {
+    padding-bottom: 70px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -33118,7 +33130,7 @@ textarea:focus {
     height: 40px;
     /* padding: 0 20px; */
   }
-  .stepperBox{
+  .stepperBox {
     padding: 0 !important;
   }
 }
@@ -35951,7 +35963,7 @@ textarea:focus {
   .intro-content .btn {
     margin-top: 30px;
   }
-  .stepperData{
+  .stepperData {
     padding: 0 20px !important;
   }
 }
@@ -38152,4 +38164,69 @@ swiper-slide img {
 }
 .float_left {
   float: left;
+}
+
+.flexcenter {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+/* .notification-box .active{display: block;} */
+.accordion {
+  margin: 40px 0;
+}
+.accordion .item {
+  margin: 0 140px;
+  border: none;
+  margin-bottom: 51px;
+  background: none;
+}
+.t-p {
+  padding: 40px 30px 0px 30px;
+}
+.accordion .item .item-header h2 button.btn.btn-link {
+  background: #1292ee;
+  color: white;
+  border-radius: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0.2;
+  text-decoration: none;
+}
+.accordion .item .item-header {
+  border-bottom: none;
+  background: transparent;
+  padding: 0px;
+  margin: 2px;
+}
+
+.accordion .item .item-header h2 button {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.accordion .item .item-header h2 svg {
+  float: right;
+  font-size: 30px;
+  color: #030f27;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+button.btn.btn-link.collapsed svg {
+  transform: rotate(0deg);
+}
+
+button.btn.btn-link svg {
+  transform: rotate(180deg);
+  transition: 0.5s;
 }
