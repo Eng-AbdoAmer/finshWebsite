@@ -1,4 +1,5 @@
-@charset "UTF-8"; /*!
+@charset "UTF-8"; 
+/*!
  * Bootstrap v5.0.0-alpha2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -331,6 +332,7 @@ select {
 [type="submit"],
 button {
   -webkit-appearance: button;
+  appearance: buttone;
 }
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
@@ -383,9 +385,11 @@ legend + * {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 ::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 ::-webkit-color-swatch-wrapper {
   padding: 0;
@@ -393,6 +397,7 @@ legend + * {
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 output {
   display: inline-block;
@@ -4045,13 +4050,11 @@ progress {
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   background-color: var(--bs-table-bg);
-  background-image: -webkit-gradient(
+  background-image: gradient(
     linear,
     left top,
     left bottom,
-    from(var(--bs-table-accent-bg)),
-    to(var(--bs-table-accent-bg))
-  );
+    from(var(--bs-table-accent-bg)),to(var(--bs-table-accent-bg)));
   background-image: -webkit-linear-gradient(
     var(--bs-table-accent-bg),
     var(--bs-table-accent-bg)
@@ -4357,7 +4360,6 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  vertical-align: middle;
   background-color: #fff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
@@ -4431,7 +4433,7 @@ progress {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  print-color-adjust: exact;
   -webkit-transition: background-color 0.15s ease-in-out,
     background-position 0.15s ease-in-out, border-color 0.15s ease-in-out,
     -webkit-box-shadow 0.15s ease-in-out;
@@ -33938,6 +33940,7 @@ textarea:focus {
   font-weight: 400;
   border: 0 none;
   -webkit-appearance: none;
+  appearance: none;
   display: block;
   background: #fff;
   border: 1px solid #eee;
@@ -37143,7 +37146,7 @@ textarea:focus {
   margin: auto;
   padding-bottom: 10px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .contact-info .icon_top {
   }
 }
@@ -37154,7 +37157,7 @@ textarea:focus {
 @media only screen and (max-width: 479px) {
   .contact-info .icon_top {
   }
-}
+} */
 
 .contact-info .icon svg {
   width: 50px;
@@ -37694,7 +37697,7 @@ textarea:focus {
   right: 0;
   bottom: 0;
   opacity: 0.5;
-  background-image: -webkit-gradient(
+  background-image: gradient(
     linear,
     left top,
     left bottom,
