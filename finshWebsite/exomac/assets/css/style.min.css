@@ -33114,7 +33114,10 @@ textarea:focus {
     font-size: 14px;
     line-height: 35px;
     height: 40px;
-    padding: 0 20px;
+    /* padding: 0 20px; */
+  }
+  .stepperBox{
+    padding: 0 !important;
   }
 }
 .btn:focus {
@@ -35944,6 +35947,9 @@ textarea:focus {
   }
   .intro-content .btn {
     margin-top: 30px;
+  }
+  .stepperData{
+    padding: 0 20px !important;
   }
 }
 @media only screen and (max-width: 479px) {
