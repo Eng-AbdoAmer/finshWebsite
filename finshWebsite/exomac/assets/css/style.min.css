@@ -1,4 +1,4 @@
-@charset "UTF-8"; 
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.0-alpha2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -4054,7 +4054,9 @@ progress {
     linear,
     left top,
     left bottom,
-    from(var(--bs-table-accent-bg)),to(var(--bs-table-accent-bg)));
+    from(var(--bs-table-accent-bg)),
+    to(var(--bs-table-accent-bg))
+  );
   background-image: -webkit-linear-gradient(
     var(--bs-table-accent-bg),
     var(--bs-table-accent-bg)
@@ -7131,11 +7133,14 @@ fieldset:disabled .btn {
   color: #cacaca;
 }
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-left: 0;
   list-style: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .page-link {
   position: relative;
@@ -32770,7 +32775,6 @@ svg:not(:root) {
     padding-top: 40px;
     padding-bottom: 80px;
   }
-
 }
 @media only screen and (max-width: 767px) {
   .section-padding-t90-b100 {
@@ -38229,4 +38233,81 @@ button.btn.btn-link.collapsed svg {
 button.btn.btn-link svg {
   transform: rotate(180deg);
   transition: 0.5s;
+}
+/*pagenation*/
+.pagination li {
+  display: inline;
+  text-align: center;
+}
+
+.pagination a {
+  float: left;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 12px;
+  color: #fff;
+  margin-left: -1px;
+  border: 1px solid transparent;
+  line-height: 1.5;
+}
+
+.pagination a.active {
+  cursor: default;
+}
+
+.pagination a:active {
+  outline: none;
+}
+
+/*=================pagination ===============*/
+
+.modal-4 a {
+  margin: 0 5px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  /* background-color: #f7c12c; */
+}
+
+.modal-4 a.prev {
+  -moz-border-radius: 50px 0 0 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px 0 0 50px;
+  width: 100px;
+}
+
+.modal-4 a.next {
+  -moz-border-radius: 0 50px 50px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 50px 50px 0;
+  width: 100px;
+}
+
+.modal-4 a:hover {
+  background-color: #ffa500;
+}
+
+.modal-4 a.active,
+.modal-4 a:active {
+  background-color: #ffa100;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
 }
