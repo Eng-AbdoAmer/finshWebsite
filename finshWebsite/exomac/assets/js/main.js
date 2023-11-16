@@ -484,7 +484,11 @@ function getPageList(totalPages, page, maxLength) {
 }
 
 $(function () {
-  var filterIndex = document.getElementById("table_size").value;
+  var e = document.getElementById("table_size");
+  var val = e.options[e.selectedIndex].value;
+  $("#table_size").val();
+  filterIndex = val;
+  console.log(filterIndex);
   var numberOfItem = $(".accordion .item").length;
   var limitPerPage = filterIndex;
   var totalPages = Math.ceil(numberOfItem / limitPerPage);
@@ -564,3 +568,12 @@ $(function () {
     return showPage(currentPage - 1);
   });
 });
+//var filterIndex = document.getElementById("table_size").value;
+
+// function SearchData() {
+//   var e = document.getElementById("table_size");
+//   var val = e.options[e.selectedIndex].value;
+//   $("#table_size").val();
+//   filterIndex = val;
+//   console.log(val);
+// }
