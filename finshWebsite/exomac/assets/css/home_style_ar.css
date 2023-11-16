@@ -166,6 +166,18 @@
   border-color: transparent;
   line-height: 1.42857;
 }
+.paddingsbtn{
+  width: 100%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.flexcenter{
+  width: 50%;
+}
+.marginrtl{
+  margin-right: 3%;
+}
 .login_area p {
   color: #2c4a6b;
   text-align: center;
@@ -195,6 +207,12 @@
   font-size: 13px;
   line-height: 20px;
   padding: 9px 12px !important;
+}
+.Accounttel {
+  text-align: right;
+}
+@media screen and (max-width: px)  and (min-width: px){
+  /* https://github.com/Eng-AbdoAmer/finshWebsite ///// file:///E:/finshWebsite/profile_caption_ar.html */
 }
 .color_reset {
   color: #f00 !important;
