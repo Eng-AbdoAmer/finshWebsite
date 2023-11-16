@@ -484,10 +484,11 @@ function getPageList(totalPages, page, maxLength) {
 }
 
 $(function () {
+  var filterIndex = document.getElementById("table_size").value;
   var numberOfItem = $(".accordion .item").length;
-  var limitPerPage = 5;
+  var limitPerPage = filterIndex;
   var totalPages = Math.ceil(numberOfItem / limitPerPage);
-  var paginationSize = 3;
+  var paginationSize = 5;
   var currentPage;
 
   function showPage(whichPage) {
