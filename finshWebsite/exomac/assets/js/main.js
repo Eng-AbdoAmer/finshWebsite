@@ -484,10 +484,22 @@ function getPageList(totalPages, page, maxLength) {
 }
 
 $(function () {
+  var e = document.getElementById("table_size");
+  var val = e.options[e.selectedIndex].value;
+  $("#table_size").val();
+  let selection = document.getElementById("table_size");
+
+  selection.addEventListener("change", () => {
+    var val = selection.options[selection.selectedIndex].text;
+    // value.innerText = selection.options[Selection.selectedIndex].text;
+    console.log(val);
+  });
+  filterIndex = val;
+  // console.log(filterIndex);
   var numberOfItem = $(".accordion .item").length;
-  var limitPerPage = 5;
+  var limitPerPage = val;
   var totalPages = Math.ceil(numberOfItem / limitPerPage);
-  var paginationSize = 3;
+  var paginationSize = 5;
   var currentPage;
 
   function showPage(whichPage) {
@@ -564,6 +576,7 @@ $(function () {
   });
 });
 
+
 // ===swiper autoPlay===
 
 var swiper = new Swiper(".mySwiper", {
@@ -577,4 +590,186 @@ var swiper = new Swiper(".mySwiper", {
       el: ".swiper-pagination",
       clickable: false,
   },
+});
+//to make Search;
+
+const search = () => {
+  const searchBox = document.getElementById("myInput").value.toUpperCase();
+  const storeItem = document.getElementById("accordionExample");
+  const notification = document.querySelectorAll(".item");
+  const name = document.getElementsByTagName("span");
+  for (var i = 0; i < name.length; i++) {
+    let match = notification[i].getElementsByTagName("span")[0];
+    if (match) {
+      let textValue = match.textContent || match.innerHTML;
+      if (textValue.toUpperCase().indexOf(searchBox) > -1) {
+        notification[i].style.display = "";
+      } else {
+        notification[i].style.display = "none";
+      }
+    }
+  }
+};
+const searchFaqs = () => {
+  const searchBox = document.getElementById("myInput").value.toUpperCase();
+  const storeItem = document.getElementById("accordionExample");
+  const notification = document.querySelectorAll(".item");
+  const name = document.getElementsByTagName("span");
+  for (var i = 0; i < name.length; i++) {
+    let match = notification[i].getElementsByTagName("span")[0];
+    if (match) {
+      let textValue = match.textContent || match.innerHTML;
+      if (textValue.toUpperCase().indexOf(searchBox) > -1) {
+        notification[i].style.display = "";
+      } else {
+        notification[i].style.display = "none";
+      }
+    }
+  }
+};
+//
+
+function x() {
+  // var e = document.getElementById("table_size");
+  // var val = e.options[e.selectedIndex].value;
+  // $("#table_size").val();
+
+  // window.location.reload();
+  //let value = document.querySelector(".accordion");
+  // value.innerText = selection.options[Selection.selectedIndex].text;
+  let selection = document.getElementById("table_size");
+
+  selection.addEventListener("change", () => {
+    var val = selection.options[selection.selectedIndex].text;
+    console.log(val);
+  });
+}
+
+/*==============pagination FAQs=========*/
+function getPageList(totalPages, page, maxLength) {
+  function range(start, end) {
+    return Array.from(Array(end - start + 1), (_, i) => i + start);
+  }
+
+  var slideWidth = maxLength < 9 ? 1 : 2;
+  var leftWidth = (maxLength - slideWidth * 2 - 3) >> 1;
+  var rightWidth = (maxLength - slideWidth * 2 - 3) >> 1;
+
+  if (totalPages <= maxLength) {
+    return range(1, totalPages);
+  }
+
+  if (page <= maxLength - slideWidth - 1 - rightWidth) {
+    return range(1, maxLength - slideWidth - 1).concat(
+      0,
+      range(totalPages - slideWidth + 1, totalPages)
+    );
+  }
+
+  if (page >= totalPages - slideWidth - 1 - rightWidth) {
+    return range(1, slideWidth).concat(
+      0,
+      range(totalPages - slideWidth - 1 - rightWidth - leftWidth, totalPages)
+    );
+  }
+
+  return range(1, slideWidth).concat(
+    0,
+    range(page - leftWidth, page + rightWidth),
+    0,
+    range(totalPages - slideWidth + 1, totalPages)
+  );
+}
+
+$(function () {
+  // var e = document.getElementById("table_size");
+  // var val = e.options[e.selectedIndex].value;
+  // $("#table_size").val();
+  // let selection = document.getElementById("table_size");
+
+  // selection.addEventListener("change", () => {
+  //   var val = selection.options[selection.selectedIndex].text;
+  //   // value.innerText = selection.options[Selection.selectedIndex].text;
+  //   console.log(val);
+  // });
+  // filterIndex = val;
+  // console.log(filterIndex);
+  var numberOfItem = $(".accordionFAQs .item").length;
+  var limitPerPage = 10;
+  var totalPages = Math.ceil(numberOfItem / limitPerPage);
+  var paginationSize = 5;
+  var currentPage;
+
+  function showPage(whichPage) {
+    if (whichPage < 1 || whichPage > totalPages) return false;
+
+    currentPage = whichPage;
+
+    $(".accordionFAQs .item")
+      .hide()
+      .slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage)
+      .show();
+
+    $(".pagination li").slice(1, -1).remove();
+
+    getPageList(totalPages, currentPage, paginationSize).forEach((item) => {
+      $("<li>")
+        .addClass("page-item")
+        .addClass(item ? "current-page" : "dots")
+        .toggleClass("active", item === currentPage)
+        .append(
+          $("<a>")
+            .addClass("page-link")
+            .attr({ href: "javascript:void(0)" })
+            .text(item || "...")
+        )
+        .insertBefore(".next-page");
+    });
+
+    // $(".Previous-page").toggleClass("disable", page === 1);
+    // $(".next-page").toggleClass("disable", page === totalPages);
+    $(".previous-page").toggleClass("disable", currentPage === 1);
+    $(".next-page").toggleClass("disable", currentPage === totalPages);
+
+    return true;
+  }
+
+  $(".pagination").append(
+    $("<li>")
+      .addClass("page-item")
+      .addClass("previous-page")
+      .append(
+        $("<a>")
+          .addClass("page-link")
+          .attr({ href: "javascript:void(0)" })
+          .text("Prev")
+      ),
+    $("<li>")
+      .addClass("page-item")
+      .addClass("next-page")
+      .append(
+        $("<a>")
+          .addClass("page-link")
+          .attr({ href: "javascript:void(0)" })
+          .text("Next")
+      )
+  );
+
+  $(".accordionFAQs").show();
+  showPage(1);
+
+  $(document).on(
+    "click",
+    ".pagination li.current-page:not(.active)",
+    function () {
+      return showPage(+$(this).text());
+    }
+  );
+
+  $(".next-page").on("click", function () {
+    return showPage(currentPage + 1);
+  });
+  $(".previous-page").on("click", function () {
+    return showPage(currentPage - 1);
+  });
 });

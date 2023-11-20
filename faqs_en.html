@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Trip || APP-EN</title>
+    <title>Trip || HOME-EN</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="" />
     <meta
@@ -13,14 +13,11 @@
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      type="image/x-icon"
       href="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+      type="image/x-icon"
     />
     <link rel="stylesheet" href="finshWebsite/exomac/assets/css/my_style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
     <link
       rel="stylesheet"
       href="finshWebsite/Documentation/assets/css/all.min.css"
@@ -31,6 +28,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- CSS============================================ -->
     <!-- Use the minified version files listed below for better performance and remove the files listed above -->
     <link
@@ -45,6 +47,7 @@
       rel="stylesheet"
       href="finshWebsite/exomac/assets/css/style.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -93,20 +96,39 @@
                         >
                       </li>
                       <li class="has-children">
-                        <a  href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
-                            class="menu-text">Profile</span></a>
-                        <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span class="menu-text">Profile</span></a
+                        >
+                        <span class="menu-toggle"
+                          ><i class="far fa-angle-down"></i
+                        ></span>
                         <ul class="sub-menu">
                           <li>
-                            <a href="profile_caption_en.html"><span class="menu-text">Edit Profile Caption</span></a>
+                            <a href="profile_caption_en.html"
+                              ><span class="menu-text"
+                                >Edit Profile Caption</span
+                              ></a
+                            >
                           </li>
                           <li>
-                            <a href="profile_client_en.html"><span class="menu-text">Edit Profile Client</span></a>
+                            <a href="profile_client_en.html"
+                              ><span class="menu-text"
+                                >Edit Profile Client</span
+                              ></a
+                            >
                           </li>
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                           ><span class="menu-text">Language</span></a
                         >
                         <span class="menu-toggle"
@@ -114,19 +136,23 @@
                         ></span>
                         <ul class="sub-menu">
                           <li>
-                            <a href="usedApp_en.html"
+                            <a href="index.html"
                               ><span class="menu-text">English</span></a
                             >
                           </li>
                           <li>
-                            <a href="useApp_ar.html"
+                            <a href="home_ar.html"
                               ><span class="menu-text">Arabic</span></a
                             >
                           </li>
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                           ><span class="menu-text">SignIn</span></a
                         >
                         <span class="menu-toggle"
@@ -252,7 +278,6 @@
                 <div class="user_image has-children" onclick="menuToggle();">
                   <img
                     src="finshWebsite/exomac/assets/images/author/blog-author.png"
-                    alt=""
                   />
                   <span class="menu-toggle"
                     ><i class="far fa-angle-down"></i
@@ -343,6 +368,12 @@
                           class="btn btn-primary btn-hover-secondary"
                           >Get Started</a
                         >
+                        <!-- <a
+                          href="#"
+                          class="btn btn-outline-white btn-hover-primary"
+                        >
+                          تعلم المزيد
+                        </a> -->
                       </div>
                     </div>
                   </div>
@@ -375,6 +406,12 @@
                           class="btn btn-primary btn-hover-secondary"
                           >Get Started</a
                         >
+                        <!-- <a
+                          href="#"
+                          class="btn btn-outline-white btn-hover-primary"
+                        >
+                          تعلم المزيد
+                        </a> -->
                       </div>
                     </div>
                     <!-- Intro One Content End -->
@@ -405,6 +442,12 @@
                           class="btn btn-primary btn-hover-secondary"
                           >Get Started</a
                         >
+                        <!-- <a
+                          href="#"
+                          class="btn btn-outline-white btn-hover-primary"
+                        >
+                          تعلم المزيد
+                        </a> -->
                       </div>
                     </div>
                     <!-- Intro One Content End -->
@@ -423,96 +466,376 @@
       </div>
       <!-- Slider/Intro Section End -->
 
-      <!-- Service Section Start -->
-      <div class="section section-padding-t110-b120" data-bg-color="#f8faff">
+      <!-- faqs Section Start -->
+      <div class="section section-padding-t90" data-bg-color="#f8faff">
         <div class="container">
-          <!-- Section Title Start -->
-          <div class="section-title text-center mb-12" data-aos="fade-up">
-            <h2 class="title">How to use the TripU App</h2>
-            <p class="sub-title">
-              Our core service is developing technology that connects drivers
-              and riders on demand. Here’s how the app works, step by step
-            </p>
-          </div>
-          <!-- Section Title End -->
-          <div class="timeline">
-            <div class="stepperData left-container">
-              <div class="number">1</div>
-              <div class="stepperBox">
-                <h2>Step 1</h2>
-                <strong class="title">A rider opens the app</strong>
-                <p class="sub-title">
-                  The rider enters their destination into the “Where to?” box;
-                  reviews each ride option for vehicle size, price, and
-                  estimated dropoff time; chooses the desired option; then
-                  confirms the pickup.
-                </p>
-                <span class="leftArrow"></span>
+          <h2 class="title text-center">
+            All Common Questions
+            <i class="fa-regular fa-circle-question"></i>
+          </h2>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
+              <div class="imgBox">
+                <img
+                  src="finshWebsite/exomac/assets/images/project/faq.jpg"
+                  style="height: 365px; width: 100%"
+                  alt=""
+                />
+                <!-- <div class="description">
+                  <h4>القيادة مع TripU</h4>
+                  <p>
+                    استفد إلى أقصى حد من وقتك على الطريق على المنصة التي تحتوي
+                    على أكبر شبكة من الركاب النشطين.
+                  </p>
+                </div> -->
               </div>
             </div>
-            <div class="stepperData right-container">
-              <div class="number">2</div>
-              <div class="stepperBox">
-                <h2>Step 2</h2>
-                <strong class="title"
-                  >The rider is matched with a driver
-                </strong>
-                <p class="sub-title">
-                  A nearby driver sees and chooses to accept the rider’s ride
-                  request. The rider is automatically notified when the driver’s
-                  vehicle is about a minute away.
-                </p>
-                <span class="rightArrow"></span>
-              </div>
-            </div>
-            <div class="stepperData left-container">
-              <div class="number">3</div>
-              <div class="stepperBox">
-                <h2>Step 3</h2>
-                <strong class="title">The driver picks up the rider</strong>
-                <p class="sub-title">
-                  The driver and the rider verify each other’s names and the
-                  destination. Then the driver starts the ride.
-                </p>
-                <span class="leftArrow"></span>
-              </div>
-            </div>
-            <div class="stepperData right-container">
-              <div class="number">4</div>
-              <div class="stepperBox">
-                <h2>Step 4</h2>
-                <strong class="title"
-                  >The driver takes the rider to the destination
-                </strong>
-                <p class="sub-title">
-                  The app gives the driver the option to access turn-by-turn
-                  directions.
-                </p>
-                <span class="rightArrow"></span>
-              </div>
-            </div>
-            <div class="stepperData left-container">
-              <div class="number">5</div>
-              <div class="stepperBox">
-                <h2>Step 5</h2>
-                <strong class="title"
-                  >The driver and rider leave ratings and reviews
-                </strong>
-                <p class="sub-title">
-                  At the end of each trip, drivers and riders can rate each
-                  other from 1 to 5 stars. Riders also have the option to give
-                  the driver compliments and a tip directly in the app.
-                </p>
-                <span class="leftArrow"></span>
+
+            <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
+              <div
+                class="accordionFAQs"
+                style="display: none"
+                id="accordionExample"
+              >
+                <div class="item">
+                  <div class="item-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingFour">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingFive">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseFive"
+                    class="collapse"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="item">
+                  <div class="item-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <span>What are examples of FAQ questions? </span>-6
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <span>What are examples of FAQ questions? </span>-9
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="item-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        <span>What are examples of FAQ questions? </span>
+                        <i class="fa fa-angle-down"></i>
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="t-p_FAQs">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters.
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- <div class="pagination">
+                  <li class="page-item previous-page disable">
+                    <a href="#" class="page-link">Prev</a>
+                  </li>
+                  <li class="page-item current-page">
+                    <a href="#" class="page-link active">1</a>
+                  </li>
+                  <li class="page-item current-page">
+                    <a href="#" class="page-link">2</a>
+                  </li>
+                  <li class="page-item current-page">
+                    <a href="#" class="page-link">3</a>
+                  </li>
+                  <li class="page-item dots">
+                    <a href="#" class="page-link">...</a>
+                  </li>
+                  <li class="page-item current-page">
+                    <a href="#" class="page-link">4</a>
+                  </li>
+                  <li class="page-item dots">
+                    <a href="#" class="page-link">...</a>
+                  </li>
+                  <li class="page-item next-page">
+                    <a href="#" class="page-link">Next</a>
+                  </li>
+                </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Service Section End -->
+      <!-- faqs Section End -->
 
-      <!-- footer section start-->
-      <div class="footer-section section" data-bg-color="#000" data-bg-color="#030e22">
+      <div
+        class="footer-section section"
+        data-bg-color="#000"
+        data-bg-color="#030e22"
+      >
         <div class="container">
           <!-- Footer Top Widgets Start -->
           <div class="row mb-lg-14 mb-md-10 mb-6">
@@ -520,21 +843,26 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 col-12 mb-6">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <img src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png" alt="">
+                  <img
+                    src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+                    alt=""
+                  />
                 </div>
-  
+
                 <div class="footer-widget-content">
                   <div class="content-footer">
                     <p><a href="tel:+0201111579400">(02) 01111579400</a></p>
                     <p><a href="mailto:info@tripu.net">info@tripu.net</a></p>
-                    <p> Address : 1 Mohamed Hassan Al Mariouteya Faisal Street - Al Haram</p>
+                    <p>
+                      Address : 1 Mohamed Hassan Al Mariouteya Faisal Street -
+                      Al Haram
+                    </p>
                   </div>
                 </div>
-  
               </div>
             </div>
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-6">
               <div class="footer-widget">
@@ -549,7 +877,7 @@
               </div>
             </div>
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
                 <div class="footer-widget">
@@ -567,7 +895,7 @@
                 </div>
               </div> -->
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
               <div class="footer-widget">
@@ -583,14 +911,14 @@
               </div>
             </div>
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
               <div class="footer-widget">
                 <h4 class="footer-widget-title">Contact</h4>
                 <div class="footer-widget-content">
                   <ul>
-                     <li><a href="technical-support_en.html">Support Ticket</a></li>
+                    <li><a href="ticket_en.html">Support Ticket</a></li>
                     <!-- <li><a href=" # .html">Help Desk</a></li> -->
                     <!-- <li><a href="  .html">Live Chat</a></li> -->
                     <li><a href="faqs_en.html">FAQs</a></li>
@@ -601,7 +929,7 @@
             <!-- Footer Widget End -->
           </div>
           <!-- Footer Top Widgets End -->
-  
+
           <!-- Footer Copyright Start -->
           <div class="row">
             <div class="col">
@@ -616,7 +944,6 @@
           <!-- Footer Copyright End -->
         </div>
       </div>
-      <!-- footer section end -->
 
       <!-- Scroll Top Start -->
       <a href="#" class="scroll-top" id="scroll-top">
@@ -633,7 +960,7 @@
             <a href="index.html">
               <img
                 src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
-                alt="TripU"
+                alt=""
               />
             </a>
           </div>
@@ -664,40 +991,60 @@
                 >
               </li>
               <li class="has-children">
-                <a  href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
-                    class="menu-text">Profile</span></a>
-                <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
-                <ul class="sub-menu">
-                  <li>
-                    <a href="profile_caption_en.html"><span class="menu-text">Edit Profile Caption</span></a>
-                  </li>
-                  <li>
-                    <a href="profile_client_en.html"><span class="menu-text">Edit Profile Client</span></a>
-                  </li>
-                </ul>
-              </li>
-              <li class="has-children">
-                <ahref=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                  ><span class="menu-text">Language</span></a
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span class="menu-text">Profile</span></a
                 >
                 <span class="menu-toggle"
                   ><i class="far fa-angle-down"></i
                 ></span>
                 <ul class="sub-menu">
                   <li>
-                    <a href="usedApp_en.html"
+                    <a href="profile_caption_en.html"
+                      ><span class="menu-text">Edit Profile Caption</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="profile_client_en.html"
+                      ><span class="menu-text">Edit Profile Client</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="menu-text">Language</span></a
+                >
+                <span class="menu-toggle"
+                  ><i class="far fa-angle-down"></i
+                ></span>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="notification_en.html"
                       ><span class="menu-text">English</span></a
                     >
                   </li>
                   <li>
-                    <a href="useApp_ar.html"
+                    <a href="notification_ar.html"
                       ><span class="menu-text">Arabic</span></a
                     >
                   </li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   ><span class="menu-text">SignIn</span></a
                 >
                 <span class="menu-toggle"

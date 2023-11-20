@@ -96,20 +96,39 @@
                         >
                       </li>
                       <li class="has-children">
-                        <a  href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
-                            class="menu-text">Profile</span></a>
-                        <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span class="menu-text">Profile</span></a
+                        >
+                        <span class="menu-toggle"
+                          ><i class="far fa-angle-down"></i
+                        ></span>
                         <ul class="sub-menu">
                           <li>
-                            <a href="profile_caption_en.html"><span class="menu-text">Edit Profile Caption</span></a>
+                            <a href="profile_caption_en.html"
+                              ><span class="menu-text"
+                                >Edit Profile Caption</span
+                              ></a
+                            >
                           </li>
                           <li>
-                            <a href="profile_client_en.html"><span class="menu-text">Edit Profile Client</span></a>
+                            <a href="profile_client_en.html"
+                              ><span class="menu-text"
+                                >Edit Profile Client</span
+                              ></a
+                            >
                           </li>
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a  href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                           ><span class="menu-text">Language</span></a
                         >
                         <span class="menu-toggle"
@@ -129,7 +148,11 @@
                         </ul>
                       </li>
                       <li class="has-children">
-                        <a  href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
                           ><span class="menu-text">SignIn</span></a
                         >
                         <span class="menu-toggle"
@@ -179,7 +202,8 @@
                 >
                   <i class="fa-solid fa-bell"></i>
                 </div>
-                <div class="notification-box animate__animated animate__flipInX"
+                <div
+                  class="notification-box animate__animated animate__flipInX"
                   style="display: none"
                 >
                   <div class="notification-item">
@@ -443,7 +467,8 @@
       <!-- Slider/Intro Section End -->
 
       <!-- Service Section Start -->
-      <div id="services"
+      <div
+        id="services"
         class="section section-padding-t55-b100"
         data-bg-color="#f8faff"
       >
@@ -456,6 +481,26 @@
             </h2>
           </div>
           <div class="container">
+            <div class="filterEntries">
+              <div class="entries">
+                Show
+                <select name="" id="table_size">
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option></select
+                >Entries
+                <input type="button" onclick="x();" value="Submit" />
+              </div>
+            </div>
+            <div class="search_area">
+              <input
+                type="text"
+                id="myInput"
+                onkeyup="search()"
+                placeholder="Search for names.."
+              />
+            </div>
             <div class="accordion" style="display: none" id="accordionExample">
               <div class="item">
                 <div class="item-header" id="headingOne">
@@ -468,7 +513,7 @@
                       aria-expanded="true"
                       aria-controls="collapseOne"
                     >
-                      Ahmed Adel-1
+                      <span>Ahmed Adel-1</span>
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -505,7 +550,7 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Kmale Ali-2
+                      <span>Kmale Ali-2</span>
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -542,7 +587,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Ahmed Amer-3
+                      <span> Ahmed Amer</span>-3
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -616,7 +661,7 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Kmale Ali-5
+                      <span> Kmale Ali-5</span>
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -653,7 +698,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Ahmed Amer-6
+                      <span> Ahmed Amer</span>-6
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -727,7 +772,7 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Kmale Ali-8
+                      <span> Kmale Ali -8</span>
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -764,7 +809,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Ahmed Amer-9
+                      <span> Ahmed Amer</span>-9
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -838,7 +883,7 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Kmale Ali-11
+                      <span> Kmale Ali-11</span>
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -875,7 +920,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Ahmed Amer-12
+                      <span> Ahmed Amer</span>-12
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -949,7 +994,7 @@
                       aria-expanded="false"
                       aria-controls="collapseTwo"
                     >
-                      Kmale Ali-14
+                      <span> Kmale Ali -14</span>
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -986,7 +1031,7 @@
                       aria-expanded="false"
                       aria-controls="collapseThree"
                     >
-                      Ahmed Amer-15
+                      <span> Ahmed Amer</span>-15
                       <i class="fa fa-angle-down"></i>
                     </button>
                   </h2>
@@ -1046,7 +1091,11 @@
       </div>
       <!-- Service Section End -->
 
-      <div class="footer-section section" data-bg-color="#000" data-bg-color="#030e22">
+      <div
+        class="footer-section section"
+        data-bg-color="#000"
+        data-bg-color="#030e22"
+      >
         <div class="container">
           <!-- Footer Top Widgets Start -->
           <div class="row mb-lg-14 mb-md-10 mb-6">
@@ -1054,21 +1103,26 @@
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 col-12 mb-6">
               <div class="footer-widget">
                 <div class="footer-logo">
-                  <img src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png" alt="">
+                  <img
+                    src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+                    alt=""
+                  />
                 </div>
-  
+
                 <div class="footer-widget-content">
                   <div class="content-footer">
                     <p><a href="tel:+0201111579400">(02) 01111579400</a></p>
                     <p><a href="mailto:info@tripu.net">info@tripu.net</a></p>
-                    <p> Address : 1 Mohamed Hassan Al Mariouteya Faisal Street - Al Haram</p>
+                    <p>
+                      Address : 1 Mohamed Hassan Al Mariouteya Faisal Street -
+                      Al Haram
+                    </p>
                   </div>
                 </div>
-  
               </div>
             </div>
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-6">
               <div class="footer-widget">
@@ -1083,7 +1137,7 @@
               </div>
             </div>
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
                 <div class="footer-widget">
@@ -1101,7 +1155,7 @@
                 </div>
               </div> -->
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
               <div class="footer-widget">
@@ -1117,7 +1171,7 @@
               </div>
             </div>
             <!-- Footer Widget End -->
-  
+
             <!-- Footer Widget Start -->
             <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
               <div class="footer-widget">
@@ -1127,7 +1181,7 @@
                      <li><a href="technical-support_en.html">Support Ticket</a></li>
                     <!-- <li><a href=" # .html">Help Desk</a></li> -->
                     <!-- <li><a href="  .html">Live Chat</a></li> -->
-                    <li><a href="faq_en.html">FAQs</a></li>
+                    <li><a href="faqs_en.html">FAQs</a></li>
                   </ul>
                 </div>
               </div>
@@ -1135,7 +1189,7 @@
             <!-- Footer Widget End -->
           </div>
           <!-- Footer Top Widgets End -->
-  
+
           <!-- Footer Copyright Start -->
           <div class="row">
             <div class="col">
@@ -1197,21 +1251,38 @@
                 >
               </li>
               <li class="has-children">
-                <a  href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
-                    class="menu-text">Profile</span></a>
-                <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span class="menu-text">Profile</span></a
+                >
+                <span class="menu-toggle"
+                  ><i class="far fa-angle-down"></i
+                ></span>
                 <ul class="sub-menu">
                   <li>
-                    <a href="profile_caption_en.html"><span class="menu-text">Edit Profile Caption</span></a>
+                    <a href="profile_caption_en.html"
+                      ><span class="menu-text">Edit Profile Caption</span></a
+                    >
                   </li>
                   <li>
-                    <a href="profile_client_en.html"><span class="menu-text">Edit Profile Client</span></a>
+                    <a href="profile_client_en.html"
+                      ><span class="menu-text">Edit Profile Client</span></a
+                    >
                   </li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <span class="menu-text">Language</span></a>
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="menu-text">Language</span></a
+                >
                 <span class="menu-toggle"
                   ><i class="far fa-angle-down"></i
                 ></span>
@@ -1229,7 +1300,11 @@
                 </ul>
               </li>
               <li class="has-children">
-                <a  href=""  role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                   ><span class="menu-text">SignIn</span></a
                 >
                 <span class="menu-toggle"
