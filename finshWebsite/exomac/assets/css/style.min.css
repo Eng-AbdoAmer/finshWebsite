@@ -38189,6 +38189,16 @@ swiper-slide img {
 .t-p {
   padding: 40px 30px 0px 30px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordion .item {
+    margin: 0 75px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .accordion .item {
+    margin: 0 10px;
+  }
+}
 .accordion .item .item-header h2 button.btn.btn-link {
   background: #1292ee;
   color: white;
@@ -38233,6 +38243,10 @@ button.btn.btn-link.collapsed svg {
 button.btn.btn-link svg {
   transform: rotate(180deg);
   transition: 0.5s;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 /*pagenation*/
 .pagination li {
@@ -38310,4 +38324,68 @@ button.btn.btn-link svg {
 .pagination button.active {
   background-color: #007bff;
   color: white;
+}
+/*=====================*/
+.accordionFAQs {
+  height: 450px;
+  margin: 0;
+}
+.accordionFAQs .item {
+  margin: 0;
+  border: none;
+  margin-bottom: 10px;
+  background: none;
+}
+.t-p_FAQs {
+  padding: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordionFAQs .item {
+    margin: 0 75px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .accordionFAQs .item {
+    margin: 0 10px;
+  }
+}
+.accordionFAQs .item .item-header h2 button.btn.btn-link {
+  background: #1292ee;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0.2;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.accordionFAQs .item .item-header {
+  border-bottom: none;
+  background: transparent;
+  padding: 0px;
+  margin: 2px;
+}
+
+.accordionFAQs .item .item-header h2 button {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.accordionFAQs .item .item-header h2 svg {
+  float: right;
+  font-size: 30px;
+  color: #030f27;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
