@@ -38139,7 +38139,6 @@ swiper-container {
   width: 100%;
   height: 100%;
 }
-
 swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -38148,7 +38147,27 @@ swiper-slide {
   justify-content: center;
   align-items: center;
 }
-
+.swiperqut {
+  display: flex;
+  justify-content: center;
+}
+.imgswipers {
+  width: 50%;
+}
+@media screen and (max-width: 991px) and (min-width: 767px){
+  .imgswipers,
+  .flexswiper{
+    width: 80% !important;
+  }
+}
+.support_info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexswiper {
+  width: 50%;
+}
 swiper-slide img {
   display: block;
   width: 100%;

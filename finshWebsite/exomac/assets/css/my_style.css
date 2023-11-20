@@ -181,8 +181,8 @@
   position: absolute;
   border-radius: 15px;
   top: 100%;
-  right: 38%;
-  width: 250px !important;
+  right: -3%;
+  width: 16% !important;
   background-color: #fff;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -196,6 +196,24 @@
   visibility: hidden;
   opacity: 0;
 }
+@media screen and (max-width: 1199px) and (min-width: 991px){
+  .profile_menu {
+    left: 8%;
+    width: 20% !important;
+}
+}
+@media screen and (max-width: 991px) and (min-width: 767px){
+  .profile_menu {
+    left: 9%;
+    width: 30% !important;
+}
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .profile_menu{
+    left: 12%;
+    width: 40% !important;
+  }
+}
 .profile_menu.active {
   visibility: visible;
   opacity: 1;
@@ -206,7 +224,7 @@
   height: 0px;
   position: absolute;
   top: -14%;
-  left: 28%;
+  right: 46%;
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent #fff transparent;

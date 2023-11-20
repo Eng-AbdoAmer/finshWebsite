@@ -4,6 +4,32 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+.profile_menu{
+  left: -3%;
+  right: auto;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 991px) {
+  .profile_menu{
+    right: 7%;
+    left: auto !important;
+    width: 25% !important;
+  }
+}
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  .profile_menu{
+    right: 9%;
+    left: auto !important;
+    width: 30% !important;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 576px) {
+  .profile_menu{
+    right: 12%;
+    left: auto !important;
+    width: 40% !important;
+  }
+}
 
 .site-mobile-menu > ul > li .menu-toggle {
   left: 0;
@@ -211,8 +237,17 @@
 .Accounttel {
   text-align: right;
 }
-@media screen and (max-width: px)  and (min-width: px){
-  /* https://github.com/Eng-AbdoAmer/finshWebsite ///// file:///E:/finshWebsite/profile_caption_ar.html */
+@media screen and (max-width: 960px)  and (min-width: 770px){
+  /* https://github.com/Eng-AbdoAmer/finshWebsite /////  */
+  .form-control-caption{
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 770px)  and (min-width: 410px){
+  /* https://github.com/Eng-AbdoAmer/finshWebsite /////  */
+  .form-control-caption{
+    width: 90% !important;
+  }
 }
 .color_reset {
   color: #f00 !important;
