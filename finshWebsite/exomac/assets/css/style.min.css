@@ -38363,13 +38363,19 @@ button.btn.btn-link svg {
   padding: 15px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .accordionFAQs {
+    height: auto;
+    margin: 40px 0;
+}
   .accordionFAQs .item {
-    margin: 0 75px;
+    margin: 10px 0;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 767px) {
   .accordionFAQs .item {
-    margin: 0 10px;
+    margin: 10px 0;
+    width: 100%;
   }
 }
 .accordionFAQs .item .item-header h2 button.btn.btn-link {
