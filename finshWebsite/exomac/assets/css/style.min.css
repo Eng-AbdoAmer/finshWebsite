@@ -309,6 +309,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  resize: none;
 }
 button,
 input {
@@ -343,9 +344,6 @@ button:not(:disabled) {
 ::-moz-focus-inner {
   padding: 0;
   border-style: none;
-}
-textarea {
-  resize: vertical;
 }
 fieldset {
   min-width: 0;
@@ -36441,7 +36439,11 @@ textarea:focus {
   margin-bottom: 20px;
 }
 .skill-section-padding-bottom {
-  padding-bottom: 190px;
+  padding-bottom: 10px;
+}
+.skill-section-server-new{
+  padding-bottom: 10px;
+  padding-top: 35px !important;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .skill-section-padding-bottom {
@@ -38152,7 +38154,7 @@ swiper-slide {
   justify-content: center;
 }
 .imgswipers {
-  width: 50%;
+  width: 70%;
 }
 @media screen and (max-width: 991px) and (min-width: 767px){
   .imgswipers,
@@ -38166,7 +38168,7 @@ swiper-slide {
   align-items: center;
 }
 .flexswiper {
-  width: 50%;
+  width: 70%;
 }
 swiper-slide img {
   display: block;
@@ -38188,7 +38190,9 @@ swiper-slide img {
 .float_left {
   float: left;
 }
-
+.offset{
+  width: 100%;
+}
 .flexcenter {
   margin: auto;
   align-items: center;

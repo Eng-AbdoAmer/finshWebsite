@@ -563,3 +563,18 @@ $(function () {
     return showPage(currentPage - 1);
   });
 });
+
+// ===swiper autoPlay===
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 100,
+  centeredSlides: false,
+  autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+  },
+});
