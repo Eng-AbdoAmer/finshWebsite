@@ -33676,6 +33676,7 @@ textarea:focus {
   left: 0;
   width: 100%;
 }
+
 .icon-box {
   position: relative;
   display: block;
@@ -33684,9 +33685,34 @@ textarea:focus {
   -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   border-radius: 5px;
+  overflow: hidden;
   z-index: 99;
   background-color: #fff;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
+.icon-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.card_A::before {
+  /* background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%); */
+  background: linear-gradient(to bottom right, #fa6fe6, #ffef65);
+}
+.card_B::before {
+  /* background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%); */
+  background: linear-gradient(to bottom right, #44f2b5, #4cbde2);
+}
+.card_C::before {
+  /* background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%); */
+  background: linear-gradient(to bottom right, #66fd9c, #f6fa60);
+}
+
 .icon-box.box-border {
   border: 1px solid #e7e7e7;
 }
@@ -33694,6 +33720,10 @@ textarea:focus {
   border-color: #fff;
   -webkit-box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
   box-shadow: 0 0 40px rgba(51, 51, 51, 0.1);
+}
+.icon-box:hover::before {
+  color: #fff;
+  height: 100%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .icon-box {
@@ -33720,6 +33750,9 @@ textarea:focus {
     max-width: 40%;
     margin-bottom: 20px;
   }
+  .icon-box .icon_svg {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   .icon-box .icon {
@@ -33727,10 +33760,19 @@ textarea:focus {
     margin: auto;
     padding-bottom: 15px;
   }
+  .icon-box .icon_svg {
+  }
 }
 .icon-box .icon svg {
   padding: auto;
   max-width: 40%;
+  width: 50px;
+  height: 50px;
+}
+.icon-box .icon_svg svg {
+  margin: 0;
+  color: #000;
+  max-width: 100%;
   width: 50px;
   height: 50px;
 }
@@ -33791,6 +33833,7 @@ textarea:focus {
   transform: translateY(-5px);
   z-index: 1;
 }
+
 .icon-box:hover .content .link {
   color: #1292ee;
 }
@@ -36441,7 +36484,7 @@ textarea:focus {
 .skill-section-padding-bottom {
   padding-bottom: 10px;
 }
-.skill-section-server-new{
+.skill-section-server-new {
   padding-bottom: 10px;
   padding-top: 35px !important;
 }
@@ -38156,13 +38199,13 @@ swiper-slide {
 .imgswipers {
   width: 70%;
 }
-@media screen and (max-width: 991px) and (min-width: 767px){
+@media screen and (max-width: 991px) and (min-width: 767px) {
   .imgswipers,
-  .flexswiper{
+  .flexswiper {
     width: 80% !important;
   }
 }
-.support_info{
+.support_info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38190,7 +38233,7 @@ swiper-slide img {
 .float_left {
   float: left;
 }
-.offset{
+.offset {
   width: 100%;
 }
 .flexcenter {
@@ -38366,7 +38409,7 @@ button.btn.btn-link svg {
   .accordionFAQs {
     height: auto;
     margin: 40px 0;
-}
+  }
   .accordionFAQs .item {
     margin: 10px 0;
     width: 100%;
@@ -38417,4 +38460,30 @@ button.btn.btn-link svg {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+}
+div#forgot-password {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+#forgot-password .form-group input {
+  width: 100% !important;
+  margin-bottom: 10px !important;
+}
+
+.check_box_area_login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.id-card .title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.id-card input[id="uploadBtn"] {
+  width: 100%;
 }

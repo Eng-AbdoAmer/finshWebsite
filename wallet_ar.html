@@ -3,36 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Trip || AUTHENTICAITON-AR</title>
+    <title>Trip || Wallet</title>
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
     <!-- Favicon -->
     <link
       rel="shortcut icon"
-      type="image/x-icon"
       href="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
-    />
-    <link
-      rel="stylesheet"
-      href="finshWebsite/exomac/assets/css/home_style_ar.css"
+      type="image/x-icon"
     />
     <link
       rel="stylesheet"
       href="finshWebsite/Documentation/assets/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="finshWebsite/exomac/assets/css/my_style.css" />
     <link rel="stylesheet" href="finshWebsite/exomac/assets/css/all.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
     <link
@@ -132,19 +130,20 @@
                           role="button"
                           data-bs-toggle="dropdown"
                           aria-expanded="false"
-                          ><span class="menu-text">اللغة</span></a
+                        >
+                          <span class="menu-text">اللغة</span></a
                         >
                         <span class="menu-toggle"
                           ><i class="far fa-angle-down"></i
                         ></span>
                         <ul class="sub-menu">
                           <li>
-                            <a href="authentication_ar.html"
-                              ><span class="">العربي</span></a
+                            <a href="home_ar.html"
+                              ><span class="home_ar.html">العربي</span></a
                             >
                           </li>
                           <li>
-                            <a href="authentication_en.html"
+                            <a href="index.html"
                               ><span class="menu-text">English</span></a
                             >
                           </li>
@@ -325,14 +324,6 @@
                   </div>
                 </div>
               </div>
-              <!-- Header Mobile Menu Toggle Start -->
-              <!-- <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
-                  <button class="toggle">
-                    <i class="icon-top"></i>
-                    <i class="icon-middle"></i>
-                    <i class="icon-bottom"></i>
-                  </button>
-                </div> -->
               <!-- Header Mobile Menu Toggle End -->
             </div>
             <!-- Header Main Menu End -->
@@ -442,6 +433,12 @@
                           class="btn btn-primary btn-hover-secondary"
                           >ابدأ</a
                         >
+                        <!-- <a
+                          href="#"
+                          class="btn btn-outline-white btn-hover-primary"
+                        >
+                        تعلم المزيد
+                        </a> -->
                       </div>
                     </div>
                     <!-- Intro One Content End -->
@@ -496,233 +493,101 @@
       </div>
       <!-- Slider/Intro Section End -->
 
-      <!-- About Section Start -->
-      <div class="taps" style="padding-bottom: 5%; float: left; width: 100%">
+      <!--Section wallet method Start -->
+      <div id="services" class="section section-padding-t110-b120">
         <div class="container">
-          <div class="tab">
-            <button
-              class="tablinks visibility"
-              onclick="openCity(event, 'Login')"
-            >
-              دخول
-            </button>
-            <button class="tablinks" onclick="openCity(event, 'Register')">
-              الإشتراك
-            </button>
+          <div class="section-title text-center mb-12" data-aos="fade-up">
+            <h2 class="title">محفظتك، استراتيجية الادخار الخاصة بك</h2>
           </div>
+          <div
+            class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6"
+          >
+            <div class="col mb-6" data-aos="fade-up">
+              <div class="icon-box card_A text-center" data-vivus-hover>
+                <div class="icon_svg">
+                  <i class="fa-solid fa-money-bill fa-2xl"></i>
+                </div>
+                <div class="content-service text-center">
+                  <h3 class="title">التوازن</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-6" data-aos="fade-up">
+              <div class="icon-box card_B text-center" data-vivus-hover>
+                <div class="icon_svg">
+                  <i class="fa-regular fa-credit-card fa-2xl"></i>
+                </div>
+                <div class="content-service">
+                  <h3 class="title">إدفع الفواتير</h3>
+                </div>
+              </div>
+            </div>
 
-          <!-- =====================Login Area=============== -->
-          <div id="Login" class="tabcontent visibility text-center">
-            <div class="registerId regisrt_area">
-              <h2 class="main_text">
-                <span class="selected" data-class="Client">العميل</span> |
-                <span data-class="Caption">الكابتن</span>
-              </h2>
-              <p>إختر نوع الحساب أولاً</p>
-              <form id="LoginClient" class="Client">
-                <input
-                  placeholder="أدخل الاميل للعميل"
-                  required
-                  class="form-control marginB-20"
-                  name="email"
-                  autocomplete="off"
-                  type="email"
-                />
-                <input
-                  placeholder="أدخل الرقم السري للعميل"
-                  required
-                  class="form-control marginB-20"
-                  name="password"
-                  autocomplete="off"
-                  type="password"
-                />
-                <div class="check_box_area">
-                  <input type="checkbox" name="rememberMe" id="" />
-                  <label for="">تذكرنى</label>
-                  <!-- <input
-                    class="marginB-20"
-                    type="submit"
-                    name="forgetPassword"
-                    value="هل نسيت كلمة السر؟"
-                  /> -->
-                  <a href="forget_password_ar.html" style="color: #f00"
-                    >هل نسيت الرقم السري؟</a
-                  >
+            <!-- Icon Box Start -->
+            <div class="col mb-6" data-aos="fade-up">
+              <div class="icon-box card_C text-center" data-vivus-hover>
+                <div class="icon_svg">
+                  <i class="fa-solid fa-wallet fa-2xl"></i>
                 </div>
-                <input
-                  class="btn btn-primary btn-hover-primary marginB-20"
-                  name="register"
-                  autocomplete="off"
-                  type="submit"
-                  value="دخول"
-                />
-              </form>
-              <form id="LoginCaption" class="Caption">
-                <input
-                  placeholder="أدخل الاميل كابتن"
-                  required
-                  class="form-control marginB-20"
-                  name="email"
-                  autocomplete="off"
-                  type="email"
-                />
-                <input
-                  placeholder="أدخل الرقم السري كابتن"
-                  required
-                  class="form-control marginB-20"
-                  name="password"
-                  autocomplete="off"
-                  type="password"
-                />
-                <div class="check_box_area">
-                  <input type="checkbox" name="rememberMe" id="" />
-                  <label for=""> تذكرنى </label>
-                  <!-- <input
-                    class="marginB-20"
-                    type="submit"
-                    name="forgetPassword"
-                    value="هل نسيت الرقم السري؟"
-                  /> -->
-                  <a href="forget_password_ar.html" style="color: #f00">هل نسيت الرقم السري؟</a>
+                <div class="content-service">
+                  <h3 class="title">التحويل</h3>
+                  <!-- <div class="desc">
+                <p>
+                  You can rent your dream car any day and anywhere we have
+                  good offers.
+                </p>
+              </div> -->
+                  <!-- <a href="#" class="link">Learn More</a> -->
                 </div>
-                <input
-                  class="btn btn-primary btn-hover-primary marginB-20"
-                  name="register"
-                  autocomplete="off"
-                  type="submit"
-                  value="دخول"
-                />
-              </form>
+              </div>
             </div>
-          </div>
-          <!-- =====================RegisterArea=============== -->
-          <div id="Register" class="tabcontent text-center">
-            <div class="registerId regisrt_area">
-              <h2 class="main_text">
-                <span class="selected" data-class="Client">العميل</span> |
-                <span data-class="Caption">الكابتن</span>
-              </h2>
-              <form id="RegisterClient" class="Client">
-                <input
-                  placeholder="أدخل الإسم للعميل"
-                  required
-                  class="form-control marginB-20"
-                  name="name"
-                  autocomplete="off"
-                  type="text"
-                />
-                <input
-                  placeholder="أدخل الهاتف للعميل"
-                  required
-                  class="form-control marginB-20"
-                  name="phone"
-                  autocomplete="off"
-                  type="text"
-                />
-                <input
-                  placeholder="أدخل الدولة للعميل"
-                  required
-                  class="form-control marginB-20"
-                  name="country"
-                  autocomplete="off"
-                  type="text"
-                />
-                <input
-                  placeholder="أدخل الإميل للعميل"
-                  required
-                  class="form-control marginB-20"
-                  name="email"
-                  autocomplete="off"
-                  type="email"
-                />
-                <input
-                  placeholder="أدخل الرقم السري للعميل"
-                  required
-                  class="form-control marginB-20"
-                  name="password"
-                  autocomplete="off"
-                  type="password"
-                />
-                <div class="check_box_area marginB-20">
-                  <input type="checkbox" name="rememberMe" id="" />
-                  <strong>
-                    <a href="policy_ar.html">شروط الخدمة </a>
-                    &
-                    <a href="policy_ar.html">سياسة الخصوصية</a>
-                  </strong>
-                </div>
-                <input
-                  class="btn btn-primary btn-hover-primary marginB-20"
-                  name="register"
-                  autocomplete="off"
-                  type="submit"
-                  value="الإشتراك"
-                />
-              </form>
-              <form id="RegisterCaption" class="Caption">
-                <input
-                  placeholder="أدخل إسم الكابتن"
-                  required
-                  class="form-control marginB-20"
-                  name="name"
-                  autocomplete="off"
-                  type="text"
-                />
-                <input
-                  placeholder="أدخل هاتف الكابتن"
-                  required
-                  class="form-control marginB-20"
-                  name="phone"
-                  autocomplete="off"
-                  type="text"
-                />
-                <input
-                  placeholder="أدخل دولة الكابتن"
-                  required
-                  class="form-control marginB-20"
-                  name="country"
-                  autocomplete="off"
-                  type="text"
-                />
-                <input
-                  placeholder="أدخل الإميل للكابتن"
-                  required
-                  class="form-control marginB-20"
-                  name="email"
-                  autocomplete="off"
-                  type="email"
-                />
-                <input
-                  placeholder="أدخل الرقم السري للكابتن"
-                  required
-                  class="form-control marginB-20"
-                  name="password"
-                  autocomplete="off"
-                  type="password"
-                />
-                <div class="check_box_area marginB-20">
-                  <input type="checkbox" name="rememberMe" id="" />
-                  <strong>
-                    <a href="policy_ar.html">شروط الخدمة </a>
-                    &
-                    <a href="policy_ar.html">سياسة الخصوصية</a>
-                  </strong>
-                </div>
-                <input
-                  class="btn btn-primary btn-hover-primary marginB-20"
-                  name="register"
-                  autocomplete="off"
-                  type="submit"
-                  value="الإشتراك"
-                />
-              </form>
-            </div>
+            <!-- Icon Box End -->
           </div>
         </div>
       </div>
-      <!-- About Section End -->
-
-      <!-- About Section End -->
+      <!--Section wallet method End -->
+      <!--Section wallet details Start -->
+      <div id="services" class="section mt-5 mb-12">
+        <div class="container">
+          <div class="table-responsive">
+            <table class="table table-striped" style="color: black">
+              <thead>
+                <tr class="table-dark">
+                  <th>الرقم</th>
+                  <th>السعر</th>
+                  <th>المرسل</th>
+                  <th>المرسل إليه</th>
+                  <th>الوقت</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>1000</td>
+                  <td>Ahmed</td>
+                  <td>Ali</td>
+                  <td>11/1/2023</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2000</td>
+                  <td>omer</td>
+                  <td>Kaream</td>
+                  <td>11/5/2023</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1100</td>
+                  <td>Mostafa</td>
+                  <td>khalad</td>
+                  <td>11/11/2023</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <!--Section wallet details End -->
 
       <!-- [footer] Information Section End -->
 
@@ -912,6 +777,7 @@
               <li class="has-children">
                 <a
                   href=""
+                  id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -923,12 +789,12 @@
                 ></span>
                 <ul class="sub-menu">
                   <li>
-                    <a href="authentication_ar.html"
-                      ><span class="">العربي</span></a
+                    <a href="home_ar.html"
+                      ><span class="home_ar.html">العربي</span></a
                     >
                   </li>
                   <li>
-                    <a href="authentication_en.html"
+                    <a href="index.html"
                       ><span class="menu-text">English</span></a
                     >
                   </li>
@@ -975,7 +841,6 @@
         </div>
       </div>
     </div>
-
     <script src="finshWebsite/exomac/assets/js/vendor/vendor.min.js"></script>
     <script src="finshWebsite/exomac/assets/js/plugins/plugins.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -984,6 +849,5 @@
     <script src="finshWebsite/exomac/assets/js/all.min.js"></script>
     <!-- Main Activation JS -->
     <script src="finshWebsite/exomac/assets/js/main.js"></script>
-    <script src="finshWebsite/exomac/assets/js/authentication.js"></script>
   </body>
 </html>

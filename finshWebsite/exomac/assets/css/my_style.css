@@ -196,20 +196,20 @@
   visibility: hidden;
   opacity: 0;
 }
-@media screen and (max-width: 1199px) and (min-width: 991px){
+@media screen and (max-width: 1199px) and (min-width: 991px) {
   .profile_menu {
     left: 8%;
     width: 20% !important;
+  }
 }
-}
-@media screen and (max-width: 991px) and (min-width: 767px){
+@media screen and (max-width: 991px) and (min-width: 767px) {
   .profile_menu {
     left: 9%;
     width: 30% !important;
-}
+  }
 }
 @media screen and (max-width: 767px) and (min-width: 576px) {
-  .profile_menu{
+  .profile_menu {
     left: 12%;
     width: 40% !important;
   }
@@ -541,7 +541,7 @@ p {
 .caption-data label,
 .car-images label,
 .person-documents label {
-  width: 72%;
+  /* width: 72%; */
   display: flex;
   text-transform: capitalize;
   color: #fff;
@@ -606,7 +606,7 @@ p {
   background-size: cover;
 }
 .car-images h2 {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 600;
 }
 .car-images label {
@@ -651,7 +651,7 @@ p {
 /* mapStyle */
 #map {
   height: 270px;
-  width: 400px;
+  width: 365px;
   position: relative;
   top: 0%;
   overflow: hidden;
@@ -667,10 +667,10 @@ p {
   color: #1292ee;
 }
 .data {
-  padding: 10px 25px;
+  padding: 10px 43px;
   position: relative;
 }
-.data::before {
+/* .data::before {
   content: "";
   height: 10px;
   width: 10px;
@@ -684,7 +684,7 @@ p {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
+} */
 
 .dont_show {
   display: none;
@@ -729,7 +729,7 @@ p {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 14px;
   width: 25%;
 }
 
