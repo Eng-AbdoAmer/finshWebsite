@@ -576,19 +576,18 @@ $(function () {
   });
 });
 
-
 // ===swiper autoPlay===
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 100,
   centeredSlides: false,
   autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
+    delay: 3500,
+    disableOnInteraction: false,
   },
   pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
+    el: ".swiper-pagination",
+    clickable: false,
   },
 });
 //to make Search;
@@ -773,3 +772,37 @@ $(function () {
     return showPage(currentPage - 1);
   });
 });
+/* =====================test_area =============*/
+$(document).ready(
+  (function () {
+    $(".client-single").on("click", function (event) {
+      event.preventDefault();
+
+      var active = $(this).hasClass("active");
+
+      var parent = $(this).parents(".testi-wrap");
+
+      if (!active) {
+        var activeBlock = parent.find(".client-single.active");
+
+        var currentPos = $(this).attr("data-position");
+
+        var newPos = activeBlock.attr("data-position");
+
+        activeBlock
+          .removeClass("active")
+          .removeClass(newPos)
+          .addClass("inactive")
+          .addClass(currentPos);
+        activeBlock.attr("data-position", currentPos);
+
+        $(this)
+          .addClass("active")
+          .removeClass("inactive")
+          .removeClass(currentPos)
+          .addClass(newPos);
+        $(this).attr("data-position", newPos);
+      }
+    });
+  })(jQuery)
+);
