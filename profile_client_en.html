@@ -1,188 +1,330 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Trip || CLINTE-PO-EN</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+    />
+    <link rel="stylesheet" href="finshWebsite/exomac/assets/css/my_style.css" />
+    <link
+      rel="stylesheet"
+      href="finshWebsite/Documentation/assets/css/all.min.css"
+    />
+    <link rel="stylesheet" href="finshWebsite/exomac/assets/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="finshWebsite/exomac/assets/css/bootstrap/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="finshWebsite/Documentation/assets/js/jquery.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Trip || CLINTE-PO-EN</title>
-  <meta name="robots" content="noindex, follow" />
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png" />
-  <link rel="stylesheet" href="finshWebsite/exomac/assets/css/my_style.css" />
-  <link rel="stylesheet" href="finshWebsite/Documentation/assets/css/all.min.css" />
-  <link rel="stylesheet" href="finshWebsite/exomac/assets/css/all.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="finshWebsite/exomac/assets/css/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="finshWebsite/Documentation/assets/js/jquery.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+      integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- CSS============================================ -->
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <link
+      rel="stylesheet"
+      href="finshWebsite/exomac/assets/css/vendor/vendor.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="finshWebsite/exomac/assets/css/plugins/plugins.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="finshWebsite/exomac/assets/css/style.min.css"
+    />
+  </head>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
-    integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- CSS============================================ -->
-  <!-- Use the minified version files listed below for better performance and remove the files listed above -->
-  <link rel="stylesheet" href="finshWebsite/exomac/assets/css/vendor/vendor.min.css" />
-  <link rel="stylesheet" href="finshWebsite/exomac/assets/css/plugins/plugins.min.css" />
-  <link rel="stylesheet" href="finshWebsite/exomac/assets/css/style.min.css" />
-</head>
-
-<body onload="initializeMap()">
-  <div id="page" class="section">
-    <!-- Header Section Start -->
-    <div class="header-section header-transparent sticky-header section">
-      <div class="header-inner">
-        <div class="container position-relative">
-          <div class="row justify-content-between align-items-center">
-            <!-- Header Logo Start -->
-            <div class="col-xl-2 col-auto">
-              <div class="header-logo">
-                <img src="./finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png" alt="" />
-              </div>
-            </div>
-            <!-- Header Logo End -->
-
-            <!-- Header Main Menu Start -->
-            <div
-              class="col-auto col-xl d-flex align-items-center justify-content-xl-center justify-content-end order-2 order-xl-1">
-              <div class="menu-column-area d-none d-xl-block position-static">
-                <nav class="site-main-menu">
-                  <ul>
-                    <li>
-                      <a href="index.html"><span class="menu-text">Home</span></a>
-                    </li>
-                    <li>
-                      <a href="offer_en.html"><span class="menu-text">Offer</span></a>
-                    </li>
-                    <li>
-                      <a href="services_en.html"><span class="menu-text">Services</span></a>
-                    </li>
-                    <li>
-                      <a href="cars_en.html"><span class="menu-text">Vehicles</span></a>
-                    </li>
-                    <li class="has-children">
-                      <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
-                          class="menu-text">Profile</span></a>
-                      <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
-                      <ul class="sub-menu">
-                        <li>
-                          <a href="profile_caption_en.html"><span class="menu-text">Edit Profile Caption</span></a>
-                        </li>
-                        <li>
-                          <a href="profile_client_en.html"><span class="menu-text">Edit Profile Client</span></a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-children">
-                      <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
-                          class="menu-text">Language</span></a>
-                      <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
-                      <ul class="sub-menu">
-                        <li>
-                          <a href="profile_caption_en.html"><span class="menu-text">English</span></a>
-                        </li>
-                        <li>
-                          <a href="profile_caption_ar.html"><span class="menu-text">Arabic</span></a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-children">
-                      <a href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span
-                          class="menu-text">SignIn</span></a>
-                      <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
-                      <ul class="sub-menu">
-                        <li>
-                          <a href="authentication_en.html"><span class="menu-text">SignIn Caption</span></a>
-                        </li>
-                        <li>
-                          <a href="authentication_en.html"><span class="menu-text">SignIn Client</span></a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="aboutUs_en.html"><span class="menu-text">About Us</span></a>
-                    </li>
-                    <li>
-                      <a href="contactUs_en.html"><span class="menu-text">Contact Us</span></a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <!-- Header Search Start -->
-              <div class="header-search-area ml-xl-7 ml-0">
-                <!-- Header Login Start -->
-                <div class="header-search">
-                  <a href="javascript:void(0)" class="header-search-toggle"><i class="pe-7s-search pe-2x pe-va"></i></a>
+  <body onload="initializeMap()">
+    <div id="page" class="section">
+      <!-- Header Section Start -->
+      <div class="header-section header-transparent sticky-header section">
+        <div class="header-inner">
+          <div class="container position-relative">
+            <div class="row justify-content-between align-items-center">
+              <!-- Header Logo Start -->
+              <div class="col-xl-2 col-auto">
+                <div class="header-logo">
+                  <img
+                    src="./finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+                    alt=""
+                  />
                 </div>
-                <!-- Header Login End -->
               </div>
-              <!-- Header Search End -->
-              <div class="bell-notificatin" current-count="8" onclick="showHide()">
-                <i class="fa-solid fa-bell"></i>
-              </div>
-              <div class="notification-box animate__animated animate__flipInX" style="display: none">
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-1.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Ahmed Adel</h4>
-                    <p>how can I help you</p>
+              <!-- Header Logo End -->
+
+              <!-- Header Main Menu Start -->
+              <div
+                class="col-auto col-xl d-flex align-items-center justify-content-xl-center justify-content-end order-2 order-xl-1"
+              >
+                <div class="menu-column-area d-none d-xl-block position-static">
+                  <nav class="site-main-menu">
+                    <ul>
+                      <li>
+                        <a href="index.html"
+                          ><span class="menu-text">Home</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="offer_en.html"
+                          ><span class="menu-text">Offer</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="services_en.html"
+                          ><span class="menu-text">Services</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="cars_en.html"
+                          ><span class="menu-text">Vehicles</span></a
+                        >
+                      </li>
+                      <li class="has-children">
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span class="menu-text">Profile</span></a
+                        >
+                        <span class="menu-toggle"
+                          ><i class="far fa-angle-down"></i
+                        ></span>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="profile_caption_en.html"
+                              ><span class="menu-text"
+                                >Edit Profile Caption</span
+                              ></a
+                            >
+                          </li>
+                          <li>
+                            <a href="profile_client_en.html"
+                              ><span class="menu-text"
+                                >Edit Profile Client</span
+                              ></a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span class="menu-text">Language</span></a
+                        >
+                        <span class="menu-toggle"
+                          ><i class="far fa-angle-down"></i
+                        ></span>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="profile_caption_en.html"
+                              ><span class="menu-text">English</span></a
+                            >
+                          </li>
+                          <li>
+                            <a href="profile_caption_ar.html"
+                              ><span class="menu-text">Arabic</span></a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a
+                          href=""
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          ><span class="menu-text">SignIn</span></a
+                        >
+                        <span class="menu-toggle"
+                          ><i class="far fa-angle-down"></i
+                        ></span>
+                        <ul class="sub-menu">
+                          <li>
+                            <a href="authentication_en.html"
+                              ><span class="menu-text">SignIn Caption</span></a
+                            >
+                          </li>
+                          <li>
+                            <a href="authentication_en.html"
+                              ><span class="menu-text">SignIn Client</span></a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="aboutUs_en.html"
+                          ><span class="menu-text">About Us</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="contactUs_en.html"
+                          ><span class="menu-text">Contact Us</span></a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <!-- Header Search Start -->
+                <div class="header-search-area ml-xl-7 ml-0">
+                  <!-- Header Login Start -->
+                  <div class="header-search">
+                    <a href="javascript:void(0)" class="header-search-toggle"
+                      ><i class="pe-7s-search pe-2x pe-va"></i
+                    ></a>
+                  </div>
+                  <!-- Header Login End -->
+                </div>
+                <!-- Header Search End -->
+                <div
+                  class="bell-notificatin"
+                  current-count="8"
+                  onclick="showHide()"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </div>
+                <div
+                  class="notification-box animate__animated animate__flipInX"
+                  style="display: none"
+                >
+                  <div class="notification-item">
+                    <img
+                      src="finshWebsite/exomac/assets/images/team/team-1.jpg"
+                      alt=""
+                    />
+                    <div class="notification-text">
+                      <h4>Ahmed Adel</h4>
+                      <p>how can I help you</p>
+                    </div>
+                  </div>
+                  <div class="notification-item">
+                    <img
+                      src="finshWebsite/exomac/assets/images/team/team-2.jpg"
+                      alt=""
+                    />
+                    <div class="notification-text">
+                      <h4>Kmale Ali</h4>
+                      <p>how much this trip</p>
+                    </div>
+                  </div>
+                  <div class="notification-item">
+                    <img
+                      src="finshWebsite/exomac/assets/images/team/team-3.jpg"
+                      alt=""
+                    />
+                    <div class="notification-text">
+                      <h4>Ahmed Amer</h4>
+                      <p>sorry! it's very expensive trip</p>
+                    </div>
+                  </div>
+                  <div class="notification-item">
+                    <img
+                      src="finshWebsite/exomac/assets/images/team/team-4.jpg"
+                      alt=""
+                    />
+                    <div class="notification-text">
+                      <h4>Omer basem</h4>
+                      <p>I am waiting you sir</p>
+                    </div>
+                  </div>
+                  <div class="notification-item">
+                    <div class="notification-text flexcenter">
+                      <a
+                        href="notification_en.html"
+                        class="btn btn-primary btn-hover-secondary"
+                        >View All</a
+                      >
+                      <!-- <a class="" href="#">View All</a> -->
+                    </div>
                   </div>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-2.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Kmale Ali</h4>
-                    <p>how much this trip</p>
-                  </div>
+                <!-- Header Mobile Menu Toggle Start -->
+                <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
+                  <button class="toggle">
+                    <i class="icon-top"></i>
+                    <i class="icon-middle"></i>
+                    <i class="icon-bottom"></i>
+                  </button>
                 </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-3.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Ahmed Amer</h4>
-                    <p>sorry! it's very expensive trip</p>
-                  </div>
-                </div>
-                <div class="notification-item">
-                  <img src="finshWebsite/exomac/assets/images/team/team-4.jpg" alt="" />
-                  <div class="notification-text">
-                    <h4>Omer basem</h4>
-                    <p>I am waiting you sir</p>
-                  </div>
-                </div>
-                <div class="notification-item">
-                  <div class="notification-text flexcenter">
-                    <a href="notification_en.html" class="btn btn-primary btn-hover-secondary">View All</a>
-                    <!-- <a class="" href="#">View All</a> -->
-                  </div>
-                </div>
+                <!-- Header Mobile Menu Toggle End -->
               </div>
-              <!-- Header Mobile Menu Toggle Start -->
-              <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
-                <button class="toggle">
-                  <i class="icon-top"></i>
-                  <i class="icon-middle"></i>
-                  <i class="icon-bottom"></i>
-                </button>
-              </div>
-              <!-- Header Mobile Menu Toggle End -->
-            </div>
-            <!-- Header Main Menu End -->
+              <!-- Header Main Menu End -->
 
-            <!-- Header Right Start -->
-            <div class="col-xl-1 col d-none d-sm-flex order-1">
-              <!-- <a href="#" class="btn btn-light btn-hover-primary"
+              <!-- Header Right Start -->
+              <div class="col-xl-1 col d-none d-sm-flex order-1">
+                <!-- <a href="#" class="btn btn-light btn-hover-primary"
                   >Login
                   <i class="fa-regular fa-user"></i>
                 </a> -->
-              <div class="user_image has-children" onclick="menuToggle();">
-                <img src="finshWebsite/exomac/assets/images/author/blog-author.png" alt="" />
-                <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+                <div class="user_image has-children" onclick="menuToggle();">
+                  <img
+                    src="finshWebsite/exomac/assets/images/author/blog-author.png"
+                    alt=""
+                  />
+                  <span class="menu-toggle"
+                    ><i class="far fa-angle-down"></i
+                  ></span>
+                </div>
               </div>
+              <!-- profile_menu -->
+              <div class="profile_menu">
+                <ul class="sub-menu">
+                  <li>
+                    <a href="#"><span class="menu-text">Edit Profile</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">Setting</span></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span class="menu-text">Forget Password</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">Help</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="menu-text">Logout</span></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- profile_menu -->
+              <!-- Header Right End -->
             </div>
+
             <!-- profile_menu -->
             <div class="profile_menu">
               <ul class="sub-menu">
@@ -208,217 +350,287 @@
             </div>
             <!-- profile_menu -->
             <!-- Header Right End -->
+
+
           </div>
         </div>
       </div>
-    </div>
-    <!-- Header Section End -->
+      <!-- Header Section End -->
 
-    <!-- Main Search Start -->
-    <div class="main-search-active">
-      <div class="sidebar-search-icon">
-        <button class="search-close"><i class="pe-7s-close"></i></button>
+      <!-- Main Search Start -->
+      <div class="main-search-active">
+        <div class="sidebar-search-icon">
+          <button class="search-close"><i class="pe-7s-close"></i></button>
+        </div>
+        <div class="sidebar-search-input">
+          <form action="#">
+            <div class="form-search">
+              <input
+                id="search"
+                class="input-text"
+                value=""
+                placeholder=""
+                type="search"
+              />
+              <button>
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <p class="form-description">Hit enter to search or ESC to close</p>
+        </div>
       </div>
-      <div class="sidebar-search-input">
-        <form action="#">
-          <div class="form-search">
-            <input id="search" class="input-text" value="" placeholder="" type="search" />
-            <button>
-              <i class="fa fa-search"></i>
-            </button>
-          </div>
-        </form>
-        <p class="form-description">Hit enter to search or ESC to close</p>
-      </div>
-    </div>
-    <!-- Main Search End -->
+      <!-- Main Search End -->
 
-    <!-- Slider/Intro Section Start -->
-    <div class="intro-slider-wrap section">
-      <div class="intro-slider swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="intro-section section overlay" data-bg-color="#000"
-              data-bg-image="finshWebsite/images/cars/trip1.jpg">
-              <div class="container">
-                <div class="row row-cols-lg-1 row-cols-1">
-                  <div class="col align-self-center">
-                    <div class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8">
-                      <h2 class="title">Let’s Rent Your Dream Car Here</h2>
-                      <div class="desc">
-                        <p>
-                          we are a rent a car agency that will help you fins
-                          the best car you have been dream to ride, lets find
-                          it.
-                        </p>
+      <!-- Slider/Intro Section Start -->
+      <div class="intro-slider-wrap section">
+        <div class="intro-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="intro-section section overlay"
+                data-bg-color="#000"
+                data-bg-image="finshWebsite/images/cars/trip1.jpg"
+              >
+                <div class="container">
+                  <div class="row row-cols-lg-1 row-cols-1">
+                    <div class="col align-self-center">
+                      <div
+                        class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8"
+                      >
+                        <h2 class="title">Let’s Rent Your Dream Car Here</h2>
+                        <div class="desc">
+                          <p>
+                            we are a rent a car agency that will help you fins
+                            the best car you have been dream to ride, lets find
+                            it.
+                          </p>
+                        </div>
+                        <a
+                          href="usedApp_en.html"
+                          class="btn btn-primary btn-hover-secondary"
+                          >Get Started</a
+                        >
                       </div>
-                      <a href="usedApp_en.html" class="btn btn-primary btn-hover-secondary">Get Started</a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="intro-section section overlay" data-bg-color="#000"
-              data-bg-image="finshWebsite/images/cars/trip2.jpg">
-              <div class="container">
-                <div class="row row-cols-lg-1 row-cols-1">
-                  <!-- Intro One Content Start -->
-                  <div class="col align-self-center">
-                    <div class="intro-content mt-8">
-                      <h2 class="title">
-                        Designing awesome brands & experiences
-                      </h2>
-                      <div class="desc">
-                        <p>
-                          We are an agency located in New York. We think
-                          strategy, craft design, develop digital and create
-                          motion. To forward your brand and business.
-                        </p>
+            <div class="swiper-slide">
+              <div
+                class="intro-section section overlay"
+                data-bg-color="#000"
+                data-bg-image="finshWebsite/images/cars/trip2.jpg"
+              >
+                <div class="container">
+                  <div class="row row-cols-lg-1 row-cols-1">
+                    <!-- Intro One Content Start -->
+                    <div class="col align-self-center">
+                      <div class="intro-content mt-8">
+                        <h2 class="title">
+                          Designing awesome brands & experiences
+                        </h2>
+                        <div class="desc">
+                          <p>
+                            We are an agency located in New York. We think
+                            strategy, craft design, develop digital and create
+                            motion. To forward your brand and business.
+                          </p>
+                        </div>
+                        <a
+                          href="usedApp_en.html"
+                          class="btn btn-primary btn-hover-secondary"
+                          >Get Started</a
+                        >
                       </div>
-                      <a href="usedApp_en.html" class="btn btn-primary btn-hover-secondary">Get Started</a>
                     </div>
+                    <!-- Intro One Content End -->
                   </div>
-                  <!-- Intro One Content End -->
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="intro-section section overlay"
+                data-bg-color="#000"
+                data-bg-image="finshWebsite/images/cars/trip3.jpg"
+              >
+                <div class="container">
+                  <div class="row row-cols-lg-1 row-cols-1">
+                    <!-- Intro One Content Start -->
+                    <div class="col align-self-center max-mb-30">
+                      <div class="intro-content mt-8">
+                        <h2 class="title">
+                          Designing awesome brands & experiences
+                        </h2>
+                        <div class="desc">
+                          <p>
+                            We are an agency located in New York. We think
+                            strategy, craft design, develop digital and create
+                            motion. To forward your brand and business.
+                          </p>
+                        </div>
+                        <a
+                          href="usedApp_en.html"
+                          class="btn btn-primary btn-hover-secondary"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                    <!-- Intro One Content End -->
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="intro-section section overlay" data-bg-color="#000"
-              data-bg-image="finshWebsite/images/cars/trip3.jpg">
-              <div class="container">
-                <div class="row row-cols-lg-1 row-cols-1">
-                  <!-- Intro One Content Start -->
-                  <div class="col align-self-center max-mb-30">
-                    <div class="intro-content mt-8">
-                      <h2 class="title">
-                        Designing awesome brands & experiences
-                      </h2>
-                      <div class="desc">
-                        <p>
-                          We are an agency located in New York. We think
-                          strategy, craft design, develop digital and create
-                          motion. To forward your brand and business.
-                        </p>
-                      </div>
-                      <a href="usedApp_en.html" class="btn btn-primary btn-hover-secondary">Get Started</a>
-                    </div>
-                  </div>
-                  <!-- Intro One Content End -->
-                </div>
-              </div>
-            </div>
+          <div class="home-slider-prev swiper-button-prev main-slider-nav">
+            <i class="fal fa-angle-left"></i>
           </div>
-        </div>
-        <div class="home-slider-prev swiper-button-prev main-slider-nav">
-          <i class="fal fa-angle-left"></i>
-        </div>
-        <div class="home-slider-next swiper-button-next main-slider-nav">
-          <i class="fal fa-angle-right"></i>
+          <div class="home-slider-next swiper-button-next main-slider-nav">
+            <i class="fal fa-angle-right"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Slider/Intro Section End -->
+      <!-- Slider/Intro Section End -->
 
-    <div class="dashbordcaption row">
-      <div class="sidebar col-lg-4 col-md-4 col-sm-12">
-        <div class="image_content">
-          <img src="./finshWebsite/exomac/assets/images/team/team-1.jpg" alt="" />
+      <div class="dashbordcaption row">
+        <div class="sidebar col-lg-4 col-md-4 col-sm-12">
+          <div class="image_content">
+            <img
+              src="./finshWebsite/exomac/assets/images/team/team-1.jpg"
+              alt=""
+            />
+          </div>
+          <a class="tablinks active" onclick="openCity(event, 'home')"
+            >personal Information</a
+          >
+          <a class="tablinks" onclick="openCity(event, 'news')">Trip Details</a>
         </div>
-        <a class="tablinks active" onclick="openCity(event, 'home')">personal Information</a>
-        <a class="tablinks" onclick="openCity(event, 'news')">Trip Details</a>
-      </div>
-      <div class="content-personal col-lg-7 col-md-7 col-sm-12">
-        <div id="home" style="display: block; margin-top: 0" class="Home_content tabcontent active">
-          <h2>personal Information</h2>
-          <!-- Tab links -->
-          <div class="tab willwidth">
-            <button class="tablink designcolortab visibilityBlock" onclick="openTaps(event, 'London')">
-              Details
-            </button>
-            <!-- <button
+        <div class="content-personal col-lg-7 col-md-7 col-sm-12">
+          <div
+            id="home"
+            style="display: block; margin-top: 0"
+            class="Home_content tabcontent active"
+          >
+            <h2>personal Information</h2>
+            <!-- Tab links -->
+            <div class="tab willwidth">
+              <button
+                class="tablink designcolortab visibilityBlock"
+                onclick="openTaps(event, 'London')"
+              >
+                Details
+              </button>
+              <!-- <button
                 class="tablink designcolortab"
                 onclick="openTaps(event, 'Paris')"
               >
                 Required Documents
               </button> -->
-            <!-- <button class="tablink designcolortab" onclick="openTaps(event, 'Tokyo')">
+              <!-- <button class="tablink designcolortab" onclick="openTaps(event, 'Tokyo')">
                 Tokyo
               </button> -->
-          </div>
+            </div>
 
-          <!-- Tab content -->
-          <div id="London" class="tabBody" style="display: block">
-            <div class="personal_info">
-              <div class="container">
-                <div class="row align-items-center card_info">
-                  <div class="col-lg-12">
-                    <div class="information">
-                      <h2>Ahmed Adel morsy</h2>
-                      <h4>New york</h4>
-                      <h5>Rating</h5>
-                      <div class="rating">
-                        8.5
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                      </div>
-                      <p>Account Details</p>
-                      <form></form>
-                      <div class="input_box">
-                        <label for="">Name</label>
-                        <input type="text" placeholder="Enter your name" required class="form-control-caption" />
-                      </div>
-                      <div class="input_box">
-                        <label for="">Email</label>
-                        <input type="email" placeholder="Enter your email" required class="form-control-caption" />
-                      </div>
-                      <div class="input_box">
-                        <label for="">phone</label>
-                        <input type="tel" placeholder="Enter your phone" required
-                          class="form-control-caption Accounttel" />
-                      </div>
-                      <div class="input_box">
-                        <label for="">country</label>
-                        <input type="text" placeholder="Egypt" readonly class="form-control-caption" />
-                      </div>
-                      <div class="gender">
-                        <span>Select gander</span>
-                        <div class="custom-select w-200">
-                          <select class="js-example-responsive" style="
+            <!-- Tab content -->
+            <div id="London" class="tabBody" style="display: block">
+              <div class="personal_info">
+                <div class="container">
+                  <div class="row align-items-center card_info">
+                    <div class="col-lg-12">
+                      <div class="information">
+                        <h2>Ahmed Adel morsy</h2>
+                        <h4>New york</h4>
+                        <h5>Rating</h5>
+                        <div class="rating">
+                          8.5
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                        </div>
+                        <p>Account Details</p>
+                        <form></form>
+                        <div class="input_box">
+                          <label for="">Name</label>
+                          <input
+                            type="text"
+                            placeholder="Enter your name"
+                            required
+                            class="form-control-caption"
+                          />
+                        </div>
+                        <div class="input_box">
+                          <label for="">Email</label>
+                          <input
+                            type="email"
+                            placeholder="Enter your email"
+                            required
+                            class="form-control-caption"
+                          />
+                        </div>
+                        <div class="input_box">
+                          <label for="">phone</label>
+                          <input
+                            type="tel"
+                            placeholder="Enter your phone"
+                            required
+                            class="form-control-caption Accounttel"
+                          />
+                        </div>
+                        <div class="input_box">
+                          <label for="">country</label>
+                          <input
+                            type="text"
+                            placeholder="Egypt"
+                            readonly
+                            class="form-control-caption"
+                          />
+                        </div>
+                        <div class="gender">
+                          <span>Select gander</span>
+                          <div class="custom-select w-200">
+                            <select
+                              class="js-example-responsive"
+                              style="
                                 border-radius: 5px;
                                 height: 48px;
                                 border: none;
                                 width: 60%;
-                              " id="gender" name="state">
-                            <option value="" disabled selected>
-                              -- Chooses --
-                            </option>
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
-                          </select>
+                              "
+                              id="gender"
+                              name="state"
+                            >
+                              <option value="" disabled selected>
+                                -- Chooses --
+                              </option>
+                              <option value="1">Male</option>
+                              <option value="2">Female</option>
+                            </select>
+                          </div>
                         </div>
+                        <div class="input_box">
+                          <label for="">password</label>
+                          <input
+                            type="password"
+                            placeholder="Enter your password"
+                            required
+                            class="form-control-caption"
+                          />
+                        </div>
+                        <button type="submit" class="site-button" name="next">
+                          Next
+                        </button>
                       </div>
-                      <div class="input_box">
-                        <label for="">password</label>
-                        <input type="password" placeholder="Enter your password" required
-                          class="form-control-caption" />
-                      </div>
-                      <button type="submit" class="site-button" name="next">
-                        Next
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- <div id="Paris" class="tabBody" style="display: none">
+            <!-- <div id="Paris" class="tabBody" style="display: none">
               <div class="tab">
                 <button
                   class="press designcolortab"
@@ -433,7 +645,7 @@
                   Car
                 </button> -->
 
-          <!--                 
+            <!--                 
                 <div id="documents" class="tabDoc">
                   <div class="container">
                     <div class="person-documents">
@@ -556,8 +768,8 @@
                     </div>
                   </div>
                 </div> -->
-          <!-- content car information -->
-          <!-- <div id="car-info" class="tabDoc" style="display: none">
+            <!-- content car information -->
+            <!-- <div id="car-info" class="tabDoc" style="display: none">
                   <div class="container">
                     <div class="content-car-info">
                       <div class="car-information ">
@@ -732,105 +944,122 @@
                     </div>
                   </div>
                 </div> -->
-          <!-- </div>
+            <!-- </div>
             </div> -->
 
-          <!-- <div id="Tokyo" class="tabBody" style="display: none">
+            <!-- <div id="Tokyo" class="tabBody" style="display: none">
               <h3>Tokyo</h3>
               <p>Tokyo is the capital of Japan.</p>
             </div> -->
-        </div>
-        <!-- Trip Details Content -->
-        <div id="news" class="news_content tabcontent content-tip_details" style="border: none; background-color: #fff">
-          <div class="container">
-            <h2>Trip Details</h2>
-            <div class="trip-table-details">
-              <div class="table-responsive">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Id</th>
-                      <th>Source Location</th>
-                      <th>Destination Location</th>
-                      <th>Price</th>
-                      <th>All Details</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Cairo</td>
-                      <td>Alexandria</td>
-                      <td>120</td>
-                      <td>
-                        <a class="site-button moreDetails" onclick="hideShow()">more details</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Giza</td>
-                      <td>Mit Ghamr</td>
-                      <td>130</td>
-                      <td>
-                        <a class="site-button moreDetails" onclick="hideShow()">more details</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Tanta</td>
-                      <td>Damietta</td>
-                      <td>140</td>
-                      <td>
-                        <a class="site-button moreDetails" onclick="hideShow()">more details</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          </div>
+          <!-- Trip Details Content -->
+          <div
+            id="news"
+            class="news_content tabcontent content-tip_details"
+            style="border: none; background-color: #fff"
+          >
+            <div class="container">
+              <h2>Trip Details</h2>
+              <div class="trip-table-details">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Id</th>
+                        <th>Source Location</th>
+                        <th>Destination Location</th>
+                        <th>Price</th>
+                        <th>All Details</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Cairo</td>
+                        <td>Alexandria</td>
+                        <td>120</td>
+                        <td>
+                          <a
+                            class="site-button moreDetails"
+                            onclick="hideShow()"
+                            >more details</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Giza</td>
+                        <td>Mit Ghamr</td>
+                        <td>130</td>
+                        <td>
+                          <a
+                            class="site-button moreDetails"
+                            onclick="hideShow()"
+                            >more details</a
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Tanta</td>
+                        <td>Damietta</td>
+                        <td>140</td>
+                        <td>
+                          <a
+                            class="site-button moreDetails"
+                            onclick="hideShow()"
+                            >more details</a
+                          >
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="showDetails" class="container" style="display: none">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="content-map">
-                  <div id="map"></div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="caption_data">
-                  <div class="data">
-                    <span><strong>Trip evaluation :</strong></span>
-                    <span>10%</span>
+            <div id="showDetails" class="container" style="display: none">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="content-map">
+                    <div id="map"></div>
                   </div>
                 </div>
-                <div class="caption_data">
-                  <div class="data">
-                    <span><strong>Customer name :</strong></span>
-                    <span>Ahmed Amer</span>
+                <div class="col-lg-6">
+                  <div class="caption_data">
+                    <div class="data">
+                      <span><strong>Trip evaluation :</strong></span>
+                      <span>10%</span>
+                    </div>
                   </div>
-                </div>
-                <div class="caption_data">
-                  <div class="data">
-                    <span><strong>Comment on the trip :</strong></span>
-                    <span>"very good trip"</span>
+                  <div class="caption_data">
+                    <div class="data">
+                      <span><strong>Customer name :</strong></span>
+                      <span>Ahmed Amer</span>
+                    </div>
                   </div>
-                </div>
-                <div class="caption_data">
-                  <div class="data">
-                    <span><strong>Trip type :</strong></span>
-                    <span>Rent by hour</span>
+                  <div class="caption_data">
+                    <div class="data">
+                      <span><strong>Comment on the trip :</strong></span>
+                      <span>"very good trip"</span>
+                    </div>
                   </div>
-                </div>
-                <div class="caption_data">
-                  <div class="data">
-                    <span><strong>Trip Status :</strong></span>
-                    <span>Done</span>
+                  <div class="caption_data">
+                    <div class="data">
+                      <span><strong>Trip type :</strong></span>
+                      <span>Rent by hour</span>
+                    </div>
                   </div>
-                </div>
-                <div class="caption_data">
-                  <div class="data">
-                    <span><strong>Time taken :</strong></span>
-                    <span>1h</span>
+                  <div class="caption_data">
+                    <div class="data">
+                      <span><strong>Trip Status :</strong></span>
+                      <span>Done</span>
+                    </div>
+                  </div>
+                  <div class="caption_data">
+                    <div class="data">
+                      <span><strong>Time taken :</strong></span>
+                      <span>1h</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -838,48 +1067,338 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- footer section start -->
-    <div class="footer-section section" data-bg-color="#000" data-bg-color="#030e22">
-      <div class="container">
-        <!-- Footer Top Widgets Start -->
-        <div class="row mb-lg-14 mb-md-10 mb-6">
-          <!-- Footer Widget Start -->
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 col-12 mb-6">
-            <div class="footer-widget">
-              <div class="footer-logo">
-                <img src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png" alt="">
-              </div>
+      <div class="section">
+        <div class="container">
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!--Start Test_Area -->
+                  <section id="testimonial-area">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                          <div class="section-heading text-center">
+                            <h2>A Word From Our Customers</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testi-wrap">
+                        <div
+                          class="client-single active position-1"
+                          data-position="position-1"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
 
-              <div class="footer-widget-content">
-                <div class="content-footer">
-                  <p><a href="tel:+0201111579400">(02) 01111579400</a></p>
-                  <p><a href="mailto:info@tripu.net">info@tripu.net</a></p>
-                  <p> Address : 1 Mohamed Hassan Al Mariouteya Faisal Street - Al Haram</p>
+                        <div
+                          class="client-single inactive position-2"
+                          data-position="position-2"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-3"
+                          data-position="position-3"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-4"
+                          data-position="position-4"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://media.licdn.com/dms/image/C4E03AQFbvYtvSeyw-g/profile-displayphoto-shrink_100_100/0?e=1574294400&v=beta&t=49_VH9HRvqymP-VLETlFhFt4idmunZPhIQfALwaTrmA"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-5"
+                          data-position="position-5"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-6"
+                          data-position="position-6"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-7"
+                          data-position="position-7"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              width="40px"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--End Test_Area -->
+                </div>
+                <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer section start -->
+      <div
+        class="footer-section section"
+        data-bg-color="#000"
+        data-bg-color="#030e22"
+      >
+        <div class="container">
+          <!-- Footer Top Widgets Start -->
+          <div class="row mb-lg-14 mb-md-10 mb-6">
+            <!-- Footer Widget Start -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 col-12 mb-6">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <img
+                    src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="footer-widget-content">
+                  <div class="content-footer">
+                    <p><a href="tel:+0201111579400">(02) 01111579400</a></p>
+                    <p><a href="mailto:info@tripu.net">info@tripu.net</a></p>
+                    <p>
+                      Address : 1 Mohamed Hassan Al Mariouteya Faisal Street -
+                      Al Haram
+                    </p>
+                  </div>
                 </div>
               </div>
-
             </div>
-          </div>
-          <!-- Footer Widget End -->
+            <!-- Footer Widget End -->
 
-          <!-- Footer Widget Start -->
-          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-6">
-            <div class="footer-widget">
-              <h4 class="footer-widget-title">Services</h4>
-              <div class="footer-widget-content">
-                <ul>
-                  <li><a href="services_en.html">Rent by hours</a></li>
-                  <li><a href="services_en.html">Rent by Days</a></li>
-                  <li><a href="services_en.html">School System</a></li>
-                </ul>
+            <!-- Footer Widget Start -->
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-6">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">Services</h4>
+                <div class="footer-widget-content">
+                  <ul>
+                    <li><a href="services_en.html">Rent by hours</a></li>
+                    <li><a href="services_en.html">Rent by Days</a></li>
+                    <li><a href="services_en.html">School System</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Footer Widget End -->
+            <!-- Footer Widget End -->
 
-          <!-- Footer Widget Start -->
-          <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+            <!-- Footer Widget Start -->
+            <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
                 <div class="footer-widget">
                   <h4 class="footer-widget-title">Products</h4>
                   <div class="footer-widget-content">
@@ -894,80 +1413,199 @@
                   </div>
                 </div>
               </div> -->
-          <!-- Footer Widget End -->
+            <!-- Footer Widget End -->
 
-          <!-- Footer Widget Start -->
-          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
-            <div class="footer-widget">
-              <h4 class="footer-widget-title">About</h4>
-              <div class="footer-widget-content">
-                <ul>
-                  <li><a href="featares_en.html">Features</a></li>
-                  <li><a href="parrners_en.html">Our Partners</a></li>
-                  <li><a href="policy_en.html">Policy</a></li>
-                  <li><a href="pricing_en.html">Pricing</a></li>
-                </ul>
+            <!-- Footer Widget Start -->
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">About</h4>
+                <div class="footer-widget-content">
+                  <ul>
+                    <li><a href="featares_en.html">Features</a></li>
+                    <li>
+                      <a
+                        data-toggle="modal"
+                        data-target="#exampleModalCenter"
+                        href="#"
+                        >Our Partners</a
+                      >
+                    </li>
+                    <li><a href="policy_en.html">Policy</a></li>
+                    <li><a href="pricing_en.html">Pricing</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Footer Widget End -->
+            <!-- Footer Widget End -->
 
-          <!-- Footer Widget Start -->
-          <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
-            <div class="footer-widget">
-              <h4 class="footer-widget-title">Contact</h4>
-              <div class="footer-widget-content">
-                <ul>
-                   <li><a href="technical-support_en.html">Technical Support</a></li>
-                  <!-- <li><a href=" # .html">Help Desk</a></li> -->
-                  <!-- <li><a href="  .html">Live Chat</a></li> -->
-                  <li><a href="faqs_en.html">FAQs</a></li>
-                </ul>
+            <!-- Footer Widget Start -->
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">Contact</h4>
+                <div class="footer-widget-content">
+                  <ul>
+                    <li>
+                      <a href="technical-support_en.html">Technical Support</a>
+                    </li>
+                    <!-- <li><a href=" # .html">Help Desk</a></li> -->
+                    <!-- <li><a href="  .html">Live Chat</a></li> -->
+                    <li><a href="faqs_en.html">FAQs</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
+            <!-- Footer Widget End -->
           </div>
-          <!-- Footer Widget End -->
-        </div>
-        <!-- Footer Top Widgets End -->
+          <!-- Footer Top Widgets End -->
 
-        <!-- Footer Copyright Start -->
-        <div class="row">
-          <div class="col">
-            <p class="copyright">
-              <!-- © 2024 <strong>TripU</strong> Made with
+          <!-- Footer Copyright Start -->
+          <div class="row">
+            <div class="col">
+              <p class="copyright">
+                <!-- © 2024 <strong>TripU</strong> Made with
                   <i class="fas fa-heart text-danger" aria-hidden="true"></i> by
                   <a href="#"></a>. -->
-              <small>&copy; Copyright 2024 silver-triangle</small>
-            </p>
+                <small>&copy; Copyright 2024 silver-triangle</small>
+              </p>
+            </div>
+          </div>
+          <!-- Footer Copyright End -->
+        </div>
+      </div>
+      <!-- footer section end -->
+      <!-- Scroll Top Start -->
+      <a href="#" class="scroll-top" id="scroll-top">
+        <i class="arrow-top fal fa-long-arrow-up"></i>
+        <i class="arrow-bottom fal fa-long-arrow-up"></i>
+      </a>
+      <!-- Scroll Top End -->
+    </div>
+
+    <div id="site-main-mobile-menu" class="site-main-mobile-menu">
+      <div class="site-main-mobile-menu-inner">
+        <div class="mobile-menu-header">
+          <div class="mobile-menu-logo">
+            <a href="index.html">
+              <img
+                src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+                alt="TripU"
+              />
+            </a>
+          </div>
+          <div class="mobile-menu-close">
+            <button class="toggle">
+              <i class="icon-top"></i>
+              <i class="icon-bottom"></i>
+            </button>
           </div>
         </div>
-        <!-- Footer Copyright End -->
+        <div class="mobile-menu-content">
+          <nav class="site-mobile-menu">
+            <ul>
+              <li>
+                <a href="index.html"><span class="menu-text">Home</span></a>
+              </li>
+              <li>
+                <a href="offer_en.html"><span class="menu-text">Offer</span></a>
+              </li>
+              <li>
+                <a href="services_en.html"
+                  ><span class="menu-text">Services</span></a
+                >
+              </li>
+              <li>
+                <a href="cars_en.html"
+                  ><span class="menu-text">Vehicles</span></a
+                >
+              </li>
+              <li class="has-children">
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span class="menu-text">Profile</span></a
+                >
+                <span class="menu-toggle"
+                  ><i class="far fa-angle-down"></i
+                ></span>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="profile_caption_en.html"
+                      ><span class="menu-text">Edit Profile Caption</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="profile_client_en.html"
+                      ><span class="menu-text">Edit Profile Client</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="menu-text">Language</span></a
+                >
+                <span class="menu-toggle"
+                  ><i class="far fa-angle-down"></i
+                ></span>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="profile_caption_en.html"
+                      ><span class="menu-text">English</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="profile_caption_ar.html"
+                      ><span class="menu-text">Arabic</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a
+                  href=""
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  ><span class="menu-text">SignIn</span></a
+                >
+                <span class="menu-toggle"
+                  ><i class="far fa-angle-down"></i
+                ></span>
+                <ul class="sub-menu">
+                  <li>
+                    <a href="authentication_en.html"
+                      ><span class="menu-text">SignIn Caption</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="authentication_en.html"
+                      ><span class="menu-text">SignIn Client</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="aboutUs_en.html"
+                  ><span class="menu-text">About Us</span></a
+                >
+              </li>
+              <li>
+                <a href="contactUs_en.html"
+                  ><span class="menu-text">Contact Us</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-    <!-- footer section end -->
-    <!-- Scroll Top Start -->
-    <a href="#" class="scroll-top" id="scroll-top">
-      <i class="arrow-top fal fa-long-arrow-up"></i>
-      <i class="arrow-bottom fal fa-long-arrow-up"></i>
-    </a>
-    <!-- Scroll Top End -->
-  </div>
 
-  <div id="site-main-mobile-menu" class="site-main-mobile-menu">
-    <div class="site-main-mobile-menu-inner">
-      <div class="mobile-menu-header">
-        <div class="mobile-menu-logo">
-          <a href="index.html">
-            <img src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png" alt="TripU" />
-          </a>
-        </div>
-        <div class="mobile-menu-close">
-          <button class="toggle">
-            <i class="icon-top"></i>
-            <i class="icon-bottom"></i>
-          </button>
-        </div>
-      </div>
       <div class="mobile-menu-content">
         <nav class="site-mobile-menu">
           <ul>
@@ -1031,112 +1669,113 @@
           </ul>
         </nav>
       </div>
+
     </div>
-  </div>
 
-  <script src="finshWebsite/exomac/assets/js/vendor/vendor.min.js"></script>
-  <script src="finshWebsite/exomac/assets/js/plugins/plugins.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-  <script src="finshWebsite/Documentation/assets/js/all.min.js"></script>
-  <script src="finshWebsite/exomac/assets/js/all.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-  <script src="finshWebsite/exomac/assets/js/all.min.js"></script>
-  <script src="finshWebsite/exomac/assets/js/bootstrap.bundle.min.js"></script>
-  <script src="finshWebsite/exomac/assets/js/profile_caption.js"></script>
-  <script type="text/javascript"
-    src="https://maps.google.com/maps/api/js?key=AIzaSyCSGP2IG1S0M2-Nt9Pr_yDQmrjjysoH4Ek&callback=initializeMap"></script>
-  <!-- Modify-->
-  <script>
-    function initializeMap() {
-      const locations = [
-        {
-          lat_user: "30.002151",
-          long_user: "31.1850012",
-          lat_going: "30.0066944",
-          long_going: "31.4514702",
-          //user_id: "1",
-          //captain_id: "1",
-        },
-      ];
-      const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-      });
-      const bounds = new google.maps.LatLngBounds();
-      const userLocation = new google.maps.LatLng(
-        parseFloat(locations[0].lat_user),
-        parseFloat(locations[0].long_user)
-      );
-      const goingLocation = new google.maps.LatLng(
-        parseFloat(locations[0].lat_going),
-        parseFloat(locations[0].long_going)
-      );
-      const userMarker = new google.maps.Marker({
-        position: userLocation,
-        map: map,
-        label: "U",
-      });
-      bounds.extend(userMarker.position);
-      const goingMarker = new google.maps.Marker({
-        position: goingLocation,
-        map: map,
-        label: "G",
-        icon: {
-          url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
-          scaledSize: new google.maps.Size(30, 40),
-        },
-      });
-      bounds.extend(goingMarker.position);
-      const directionsService = new google.maps.DirectionsService();
-      const directionsRenderer = new google.maps.DirectionsRenderer();
-      directionsRenderer.setMap(map);
+    <script src="finshWebsite/exomac/assets/js/vendor/vendor.min.js"></script>
+    <script src="finshWebsite/exomac/assets/js/plugins/plugins.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="finshWebsite/Documentation/assets/js/all.min.js"></script>
+    <script src="finshWebsite/exomac/assets/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="finshWebsite/exomac/assets/js/all.min.js"></script>
+    <script src="finshWebsite/exomac/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="finshWebsite/exomac/assets/js/profile_caption.js"></script>
+    <script
+      type="text/javascript"
+      src="https://maps.google.com/maps/api/js?key=AIzaSyCSGP2IG1S0M2-Nt9Pr_yDQmrjjysoH4Ek&callback=initializeMap"
+    ></script>
+    <!-- Modify-->
+    <script>
+      function initializeMap() {
+        const locations = [
+          {
+            lat_user: "30.002151",
+            long_user: "31.1850012",
+            lat_going: "30.0066944",
+            long_going: "31.4514702",
+            //user_id: "1",
+            //captain_id: "1",
+          },
+        ];
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 13,
+        });
+        const bounds = new google.maps.LatLngBounds();
+        const userLocation = new google.maps.LatLng(
+          parseFloat(locations[0].lat_user),
+          parseFloat(locations[0].long_user)
+        );
+        const goingLocation = new google.maps.LatLng(
+          parseFloat(locations[0].lat_going),
+          parseFloat(locations[0].long_going)
+        );
+        const userMarker = new google.maps.Marker({
+          position: userLocation,
+          map: map,
+          label: "U",
+        });
+        bounds.extend(userMarker.position);
+        const goingMarker = new google.maps.Marker({
+          position: goingLocation,
+          map: map,
+          label: "G",
+          icon: {
+            url: "http://maps.google.com/mapfiles/ms/icons/green-dot.png",
+            scaledSize: new google.maps.Size(30, 40),
+          },
+        });
+        bounds.extend(goingMarker.position);
+        const directionsService = new google.maps.DirectionsService();
+        const directionsRenderer = new google.maps.DirectionsRenderer();
+        directionsRenderer.setMap(map);
 
-      const request = {
-        origin: userLocation,
-        destination: goingLocation,
-        travelMode: google.maps.TravelMode.DRIVING,
-      };
-      directionsService.route(request, function (result, status) {
-        if (status == google.maps.DirectionsStatus.OK) {
-          directionsRenderer.setDirections(result);
-        }
-      });
+        const request = {
+          origin: userLocation,
+          destination: goingLocation,
+          travelMode: google.maps.TravelMode.DRIVING,
+        };
+        directionsService.route(request, function (result, status) {
+          if (status == google.maps.DirectionsStatus.OK) {
+            directionsRenderer.setDirections(result);
+          }
+        });
 
-      const geocoder = new google.maps.Geocoder();
-      geocodeLatLng(geocoder, userLocation, "fromAddress");
-      geocodeLatLng(geocoder, goingLocation, "toAddress");
+        const geocoder = new google.maps.Geocoder();
+        geocodeLatLng(geocoder, userLocation, "fromAddress");
+        geocodeLatLng(geocoder, goingLocation, "toAddress");
 
-      /*const userInfoWindow = new google.maps.InfoWindow({
+        /*const userInfoWindow = new google.maps.InfoWindow({
     content: `User ID: ${locations[0].user_id}`,
   });*/
-      userMarker.addListener("click", function () {
-        userInfoWindow.open(map, userMarker);
-      });
+        userMarker.addListener("click", function () {
+          userInfoWindow.open(map, userMarker);
+        });
 
-      /*const goingInfoWindow = new google.maps.InfoWindow({
+        /*const goingInfoWindow = new google.maps.InfoWindow({
     content: `Captain ID: ${locations[0].captain_id}`,
   });*/
-      goingMarker.addListener("click", function () {
-        goingInfoWindow.open(map, goingMarker);
-      });
+        goingMarker.addListener("click", function () {
+          goingInfoWindow.open(map, goingMarker);
+        });
 
-      map.fitBounds(bounds);
-    }
+        map.fitBounds(bounds);
+      }
 
-    function geocodeLatLng(geocoder, latLng, elementId) {
-      geocoder.geocode({ location: latLng }, function (results, status) {
-        if (status === "OK") {
-          if (results[1]) {
-            document.getElementById(elementId).textContent =
-              results[1].formatted_address;
+      function geocodeLatLng(geocoder, latLng, elementId) {
+        geocoder.geocode({ location: latLng }, function (results, status) {
+          if (status === "OK") {
+            if (results[1]) {
+              document.getElementById(elementId).textContent =
+                results[1].formatted_address;
+            }
           }
-        }
-      });
-    }
-  </script>
-  <!-- End Modify-->
-  <!-- Main Activation JS -->
-  <script src="finshWebsite/exomac/assets/js/main.js"></script>
-</body>
-
+        });
+      }
+    </script>
+    <!-- End Modify-->
+    <!-- Main Activation JS -->
+    <script src="finshWebsite/exomac/assets/js/main.js"></script>
+  </body>
 </html>

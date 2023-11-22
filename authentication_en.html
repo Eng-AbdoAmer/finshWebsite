@@ -467,8 +467,701 @@
           </div>
           <!-- Footer Widget End -->
 
+
           <!-- Footer Widget Start -->
           <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+
+      <!-- Main Search Start -->
+      <div class="main-search-active">
+        <div class="sidebar-search-icon">
+          <button class="search-close"><i class="pe-7s-close"></i></button>
+        </div>
+        <div class="sidebar-search-input">
+          <form action="#">
+            <div class="form-search">
+              <input
+                id="search"
+                class="input-text"
+                value=""
+                placeholder=""
+                type="search"
+              />
+              <button>
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+          <p class="form-description">Hit enter to search or ESC to close</p>
+        </div>
+      </div>
+      <!-- Main Search End -->
+
+      <!-- Slider/Intro Section Start -->
+      <div class="intro-slider-wrap section">
+        <div class="intro-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="intro-section section overlay"
+                data-bg-color="#000"
+                data-bg-image="finshWebsite/images/cars/trip1.jpg"
+              >
+                <div class="container">
+                  <div class="row row-cols-lg-1 row-cols-1">
+                    <div class="col align-self-center">
+                      <div
+                        class="intro-content mt-xl-8 mt-lg-8 mt-md-8 mt-sm-8 mt-xs-8"
+                      >
+                        <h2 class="title">Let’s Rent Your Dream Car Here</h2>
+                        <div class="desc">
+                          <p>
+                            we are a rent a car agency that will help you fins
+                            the best car you have been dream to ride, lets find
+                            it.
+                          </p>
+                        </div>
+                        <a
+                          href="usedApp_en.html"
+                          class="btn btn-primary btn-hover-secondary"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="intro-section section overlay"
+                data-bg-color="#000"
+                data-bg-image="finshWebsite/images/cars/trip2.jpg"
+              >
+                <div class="container">
+                  <div class="row row-cols-lg-1 row-cols-1">
+                    <!-- Intro One Content Start -->
+                    <div class="col align-self-center">
+                      <div class="intro-content mt-8">
+                        <h2 class="title">
+                          Designing awesome brands & experiences
+                        </h2>
+                        <div class="desc">
+                          <p>
+                            We are an agency located in New York. We think
+                            strategy, craft design, develop digital and create
+                            motion. To forward your brand and business.
+                          </p>
+                        </div>
+                        <a
+                          href="usedApp_en.html"
+                          class="btn btn-primary btn-hover-secondary"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                    <!-- Intro One Content End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="intro-section section overlay"
+                data-bg-color="#000"
+                data-bg-image="finshWebsite/images/cars/trip3.jpg"
+              >
+                <div class="container">
+                  <div class="row row-cols-lg-1 row-cols-1">
+                    <!-- Intro One Content Start -->
+                    <div class="col align-self-center max-mb-30">
+                      <div class="intro-content mt-8">
+                        <h2 class="title">
+                          Designing awesome brands & experiences
+                        </h2>
+                        <div class="desc">
+                          <p>
+                            We are an agency located in New York. We think
+                            strategy, craft design, develop digital and create
+                            motion. To forward your brand and business.
+                          </p>
+                        </div>
+                        <a
+                          href="usedApp_en.html"
+                          class="btn btn-primary btn-hover-secondary"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                    <!-- Intro One Content End -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-slider-prev swiper-button-prev main-slider-nav">
+            <i class="fal fa-angle-left"></i>
+          </div>
+          <div class="home-slider-next swiper-button-next main-slider-nav">
+            <i class="fal fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Slider/Intro Section End -->
+
+      <!-- About Section Start -->
+      <div class="taps" style="padding-bottom: 5%; float: left; width: 100%">
+        <div class="container">
+          <div class="tab">
+            <button
+              class="tablinks visibility"
+              onclick="openCity(event, 'Login')"
+            >
+              Login
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'Register')">
+              Register
+            </button>
+          </div>
+
+          <!-- =====================Login Area=============== -->
+          <div id="Login" class="tabcontent visibility text-center">
+            <div class="registerId regisrt_area">
+              <h2 class="main_text">
+                <span class="selected" data-class="Client">Client</span> |
+                <span data-class="Caption">Caption</span>
+              </h2>
+              <p>Chose Type Account First</p>
+              <form id="LoginClient" class="Client">
+                <input
+                  placeholder="Enter user email Client"
+                  required
+                  class="form-control marginB-20"
+                  name="email"
+                  autocomplete="off"
+                  type="email"
+                />
+                <input
+                  placeholder="Enter user password Client"
+                  required
+                  class="form-control marginB-20"
+                  name="password"
+                  autocomplete="off"
+                  type="password"
+                />
+                <div class="check_box_area_login">
+                  <div class="remember">
+                    <input type="checkbox" name="rememberMe" id="" />
+                    <label for="">Remember Me</label>
+                  </div>
+
+                  <a class="" href="forget_password_en.html" style="color: #f00"
+                    >Forget Password</a
+                  >
+                </div>
+                <input
+                  class="btn btn-primary btn-hover-primary marginB-20"
+                  name="register"
+                  autocomplete="off"
+                  type="submit"
+                  value="Login"
+                />
+              </form>
+              <form id="LoginCaption" class="Caption">
+                <input
+                  placeholder="Enter user email Client"
+                  required
+                  class="form-control marginB-20"
+                  name="email"
+                  autocomplete="off"
+                  type="email"
+                />
+                <input
+                  placeholder="Enter user password Client"
+                  required
+                  class="form-control marginB-20"
+                  name="password"
+                  autocomplete="off"
+                  type="password"
+                />
+                <div class="check_box_area_login">
+                  <div class="remember">
+                    <input type="checkbox" name="rememberMe" id="" />
+                    <label for="">Remember Me</label>
+                  </div>
+
+                  <a class="" href="forget_password_en.html" style="color: #f00"
+                    >Forget Password</a
+                  >
+                </div>
+                <input
+                  class="btn btn-primary btn-hover-primary marginB-20"
+                  name="register"
+                  autocomplete="off"
+                  type="submit"
+                  value="Login"
+                />
+              </form>
+            </div>
+          </div>
+          <!-- =====================RegisterArea=============== -->
+          <div id="Register" class="tabcontent text-center">
+            <div class="registerId regisrt_area">
+              <h2 class="main_text">
+                <span class="selected" data-class="Client">Client</span> |
+                <span data-class="Caption">Caption</span>
+              </h2>
+              <form id="RegisterClient" class="Client">
+                <input
+                  placeholder="Enter user Name Client"
+                  required
+                  class="form-control marginB-20"
+                  name="name"
+                  autocomplete="off"
+                  type="text"
+                />
+                <input
+                  placeholder="Enter user phone Client"
+                  required
+                  class="form-control marginB-20"
+                  name="phone"
+                  autocomplete="off"
+                  type="tel"
+                />
+                <input
+                  placeholder="Enter user Country Client"
+                  required
+                  class="form-control marginB-20"
+                  name="country"
+                  autocomplete="off"
+                  type="text"
+                />
+                <input
+                  placeholder="Enter user email Client"
+                  required
+                  class="form-control marginB-20"
+                  name="email"
+                  autocomplete="off"
+                  type="email"
+                />
+                <input
+                  placeholder="Enter user password Client"
+                  required
+                  class="form-control marginB-20"
+                  name="password"
+                  autocomplete="off"
+                  type="password"
+                />
+                <div class="check_box_area marginB-20">
+                  <input type="checkbox" name="rememberMe" id="" />
+                  <strong>
+                    <a href="policy_en.html">Terms of Service </a>
+                    &
+                    <a href="policy_en.html">Privacy Policy</a>
+                  </strong>
+                </div>
+                <input
+                  class="btn btn-primary btn-hover-primary marginB-20"
+                  name="register"
+                  autocomplete="off"
+                  type="submit"
+                  value="Register"
+                />
+              </form>
+              <form id="RegisterCaption" class="Caption">
+                <input
+                  placeholder="Enter user Name Caption"
+                  required
+                  class="form-control marginB-20"
+                  name="name"
+                  autocomplete="off"
+                  type="text"
+                />
+                <input
+                  placeholder="Enter user phone Caption"
+                  required
+                  class="form-control marginB-20"
+                  name="phone"
+                  autocomplete="off"
+                  type="tel"
+                />
+                <input
+                  placeholder="Enter user Country Caption"
+                  required
+                  class="form-control marginB-20"
+                  name="country"
+                  autocomplete="off"
+                  type="text"
+                />
+                <input
+                  placeholder="Enter user email Caption"
+                  required
+                  class="form-control marginB-20"
+                  name="email"
+                  autocomplete="off"
+                  type="email"
+                />
+                <input
+                  placeholder="Enter user password Caption"
+                  required
+                  class="form-control marginB-20"
+                  name="password"
+                  autocomplete="off"
+                  type="password"
+                />
+                <div class="check_box_area marginB-20">
+                  <input type="checkbox" name="rememberMe" id="" />
+                  <strong>
+                    <a href="policy_en.html">Terms of Service </a>
+                    &
+                    <a href="policy_en.html">Privacy Policy</a>
+                  </strong>
+                </div>
+                <input
+                  class="btn btn-primary btn-hover-primary marginB-20"
+                  name="register"
+                  autocomplete="off"
+                  type="submit"
+                  value="Register"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About Section End -->
+      <div class="section">
+        <div class="container">
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-lg"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!--Start Test_Area -->
+                  <section id="testimonial-area">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                          <div class="section-heading text-center">
+                            <h2>A Word From Our Customers</h2>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testi-wrap">
+                        <div
+                          class="client-single active position-1"
+                          data-position="position-1"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-2"
+                          data-position="position-2"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-3"
+                          data-position="position-3"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-4"
+                          data-position="position-4"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://media.licdn.com/dms/image/C4E03AQFbvYtvSeyw-g/profile-displayphoto-shrink_100_100/0?e=1574294400&v=beta&t=49_VH9HRvqymP-VLETlFhFt4idmunZPhIQfALwaTrmA"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-5"
+                          data-position="position-5"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-6"
+                          data-position="position-6"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+
+                        <div
+                          class="client-single inactive position-7"
+                          data-position="position-7"
+                        >
+                          <div class="client-img">
+                            <img
+                              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+                              width="40px"
+                              alt=""
+                            />
+                          </div>
+                          <div class="client-comment">
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. consequat.
+                            </h3>
+                            <span><i class="fa fa-quote-left"></i></span>
+                          </div>
+                          <div class="client-info">
+                            <h3>Design By</h3>
+                            <a href="#">
+                              <i class="fa-brands fa-facebook"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-google-plus-g"></i
+                            ></a>
+                            <a href="#"
+                              ><i class="fa-brands fa-linkedin-in"></i
+                            ></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!--End Test_Area -->
+                </div>
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="footer-section section"
+        data-bg-color="#000"
+        data-bg-color="#030e22"
+      >
+        <div class="container">
+          <!-- Footer Top Widgets Start -->
+          <div class="row mb-lg-14 mb-md-10 mb-6">
+            <!-- Footer Widget Start -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 col-12 mb-6">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <img
+                    src="finshWebsite/images/التسليم/التسليم/موكاب/noBackground.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="footer-widget-content">
+                  <div class="content-footer">
+                    <p><a href="tel:+0201111579400">(02) 01111579400</a></p>
+                    <p><a href="mailto:info@tripu.net">info@tripu.net</a></p>
+                    <p>
+                      Address : 1 Mohamed Hassan Al Mariouteya Faisal Street -
+                      Al Haram
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Widget End -->
+
+            <!-- Footer Widget Start -->
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6 mb-6">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">Services</h4>
+                <div class="footer-widget-content">
+                  <ul>
+                    <li><a href="services_en.html">Rent by hours</a></li>
+                    <li><a href="services_en.html">Rent by Days</a></li>
+                    <li><a href="services_en.html">School System</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Footer Widget End -->
+
+            <!-- Footer Widget Start -->
+            <!-- <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+
                 <div class="footer-widget">
                   <h4 class="footer-widget-title">Products</h4>
                   <div class="footer-widget-content">
@@ -485,6 +1178,7 @@
               </div> -->
           <!-- Footer Widget End -->
 
+
           <!-- Footer Widget Start -->
           <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
             <div class="footer-widget">
@@ -496,6 +1190,27 @@
                   <li><a href="policy_en.html">Policy</a></li>
                   <li><a href="pricing_en.html">Pricing</a></li>
                 </ul>
+
+            <!-- Footer Widget Start -->
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6 mb-6">
+              <div class="footer-widget">
+                <h4 class="footer-widget-title">About</h4>
+                <div class="footer-widget-content">
+                  <ul>
+                    <li><a href="featares_en.html">Features</a></li>
+                    <li>
+                      <a
+                        data-toggle="modal"
+                        data-target="#exampleModalCenter"
+                        href="#"
+                        >Our Partners</a
+                      >
+                    </li>
+                    <li><a href="policy_en.html">Policy</a></li>
+                    <li><a href="pricing_en.html">Pricing</a></li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
