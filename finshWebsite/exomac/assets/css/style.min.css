@@ -150,6 +150,12 @@ abbr[title] {
   cursor: help;
   text-decoration-skip-ink: none;
 }
+/* svg.svg-inline--fa.fa-caret-down:hover {
+  transform: rotate(176deg);
+}
+svg.svg-inline--fa.fa-caret-down {
+  transition: 1s;
+} */
 address {
   margin-bottom: 1rem;
   font-style: normal;
@@ -33760,8 +33766,6 @@ textarea:focus {
     margin: auto;
     padding-bottom: 15px;
   }
-  .icon-box .icon_svg {
-  }
 }
 .icon-box .icon svg {
   padding: auto;
@@ -35865,9 +35869,11 @@ textarea:focus {
 }
 .site-mobile-menu > ul > li.open > a {
   border-bottom-color: rgba(255, 255, 255, 0.15);
+  transition: 1.5s;
 }
 .site-mobile-menu > ul > li.open > .menu-toggle {
   background-color: rgba(255, 255, 255, 0.2);
+  transform: rotate(180deg);
 }
 .site-mobile-menu > ul > li.open > .menu-toggle i {
   -webkit-transform: rotateX(180deg);
@@ -36238,29 +36244,14 @@ textarea:focus {
   color: #748494;
 }
 .about-image-area {
-  position: relative;
-  z-index: 9;
   height: 100%;
-  margin-right: 45px;
-}
-.about-image-area.right-0 .about-image {
-  right: 0;
-}
-.about-image-area .about-image {
-  position: relative;
-  top: 0;
-  right: 45px;
-  float: right;
-  z-index: 9;
-}
-.img_stack {
-  left: 20% !important;
+  width: 90%;
 }
 .img_stack_down img {
-  width: 85%;
+  width: 100%;
 }
 .img_stack img {
-  width: 80%;
+  width: 100%;
 }
 .about-image-area .about-image.right-n50 {
   right: -50px !important;
@@ -36279,10 +36270,16 @@ textarea:focus {
   .about-image-area .about-image.right-n50 {
     right: 0 !important;
   }
+  .colpass{
+    margin-top: 3%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .about-image-area .about-image.right-n50 {
     right: 0 !important;
+  }
+  .colpass{
+    margin-top: 3%;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -36295,20 +36292,7 @@ textarea:focus {
     right: 0;
   }
 }
-@media only screen and (max-width: 479px) {
-  .about-image-area .about-image {
-    right: 0;
-    width: 250px;
-  }
-}
-.about-image-area .about-image:nth-child(2) {
-  position: absolute;
-  top: 70px;
-  left: 0;
-  z-index: 8;
-  float: left;
-  text-align: left;
-}
+
 .about-image-area .about-image img {
   border-radius: 5px;
   -webkit-box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05),
